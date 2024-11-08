@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Home</title>
+    <link>https://ldm.engr.uconn.edu/tags/hugo/</link>
+    <description>Recent content in Hugo on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2018 Laurent Michel</copyright>
+    <lastBuildDate>Mon, 24 Jul 2017 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ldm.engr.uconn.edu/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo and the Academic Theme</title>
+      <link>https://ldm.engr.uconn.edu/post/getting-started/</link>
+      <pubDate>Mon, 24 Jul 2017 09:00:00 +0000</pubDate>
+      
+      <guid>https://ldm.engr.uconn.edu/post/getting-started/</guid>
+      <description>I converted my site from RapidWeaver to Hugo and adopted the Academic theme. With a few tweaks, it delivered a nice site that is quite easy to maintain, including a list of publications with bibtex as a backend for the format.
+Getting bibtex as a source This is not as difficult as it may seem. The trick was to avoid server-side PHP and adopt, instead, a javascript implementation that renders the .</description>
+    </item>
+    
+    <item>
+      <title>Publications with yaml</title>
+      <link>https://ldm.engr.uconn.edu/pubs/mypubs/</link>
+      <pubDate>Mon, 24 Jul 2017 09:00:00 +0000</pubDate>
+      
+      <guid>https://ldm.engr.uconn.edu/pubs/mypubs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
