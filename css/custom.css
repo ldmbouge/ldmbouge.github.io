@@ -18,3 +18,12 @@ td:nth-child(1) {
     max-width: 150em;
 }
 
+img[src$='#floatleft']
+{
+	float:left;
+}
+
+img[src$='#floatright']
+{
+	float:right;
+}

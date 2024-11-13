@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Laurent Michel on Recent</title>
-    <link>https://ldmbouge.github.io/basic/</link>
+    <link>http://localhost:1313/basic/</link>
     <description>Recent content in Laurent Michel on Recent</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ldmbouge.github.io/basic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/basic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Biography</title>
-      <link>https://ldmbouge.github.io/basic/about/</link>
+      <link>http://localhost:1313/basic/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/basic/about/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;left&#34;&gt;&lt;img src=&#34;https://ldmbouge.github.io/img/portrait.jpg&#34;&#xA;    alt=&#34;Me&#34; width=&#34;150&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Laurent received a B.S. and an Sc.M. in Computer Science from &amp;ldquo;Les&#xA;Facultés Universitaires Notre-Dame de la Paix&amp;rdquo; (&amp;lsquo;93) in Namur,&#xA;Belgium. He later received an Sc.M. (&amp;lsquo;96) and Ph.D. (&amp;lsquo;99) degrees in&#xA;Computer Science from Brown University.&lt;/p&gt;&#xA;&lt;p&gt;After spending one year in industry and 2 years at Brown University as&#xA;Visiting Assistant Professor, he joined the department in 2002 as&#xA;Assistant Professor of Computer Science and Engineering and is now a&#xA;Professor since 2017. He is now the Synchrony Chaired Professor in Cybersecurity.&#xA;His research interests focus on the design and&#xA;implementation of domain specific languages for combinatorial&#xA;optimization, voting security, and system security through optimization.&#xA;He is co-Director of The  Connecticut Advanced Computing Center.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/basic/about/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/portrait.jpg#floatright&#34;&#xA;    alt=&#34;Me&#34; width=&#34;200&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Laurent received a B.S. and an Sc.M. in Computer Science from &amp;ldquo;Les&#xA;Facultés Universitaires Notre-Dame de la Paix&amp;rdquo; (&amp;lsquo;93) in Namur,&#xA;Belgium. He later received an Sc.M. (&amp;lsquo;96) and Ph.D. (&amp;lsquo;99) degrees in&#xA;Computer Science from Brown University.&lt;/p&gt;&#xA;&lt;p&gt;After spending one year in industry and 2 years at Brown University as&#xA;Visiting Assistant Professor, he joined the department in 2002 as&#xA;Assistant Professor of Computer Science and Engineering and is now a&#xA;Professor since 2017. He is now the Synchrony Chaired Professor in Cybersecurity.&#xA;His research interests focus on the design and&#xA;implementation of domain specific languages for combinatorial&#xA;optimization, voting security, and system security through optimization.&#xA;He is co-Director of The  Connecticut Advanced Computing Center.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Roles</title>
-      <link>https://ldmbouge.github.io/basic/roles/</link>
+      <link>http://localhost:1313/basic/roles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/basic/roles/</guid>
+      <guid>http://localhost:1313/basic/roles/</guid>
       <description>&lt;h2 id=&#34;center-for-voting-technology-research-voter&#34;&gt;Center for Voting Technology Research (VoTeR)&lt;/h2&gt;&#xA;&lt;p&gt;I serve as a coPI in the &lt;a href=&#34;https://voter.engr.uconn.edu&#34;&gt;VoTeR center&lt;/a&gt; since its inception in 2006. We focus&#xA;on supporting the Secretary of the State&amp;rsquo;s office in CT.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cacc-co-director&#34;&gt;CACC co-Director&lt;/h2&gt;&#xA;&lt;p&gt;I serve as co-Director (along with Prof. J. Chandy) for the&#xA;&lt;a href=&#34;https://cacc.engr.uconn.edu&#34;&gt;CACC&lt;/a&gt; research center.  The Connecticut&#xA;Advanced Computing Center (CACC) leverages the synergies existing in&#xA;CHEST, CSI, Synchrony and VoTeR to investigate, develop, promote, and&#xA;nurture the best hardware and software based security practices for&#xA;indispensable defense and commercial application domains and, in&#xA;particular, for emerging fields such as mobile device security.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Teaching</title>
-      <link>https://ldmbouge.github.io/basic/teaching/</link>
+      <link>http://localhost:1313/basic/teaching/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/basic/teaching/</guid>
+      <guid>http://localhost:1313/basic/teaching/</guid>
       <description>&lt;h2 id=&#34;present&#34;&gt;Present&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Teaching buy out in Fall&#39;24&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;past&#34;&gt;Past&lt;/h2&gt;&#xA;&lt;p&gt;I taught the following classes at UConn&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CSE1729: Introduction to Computing for Majors&lt;/li&gt;&#xA;&lt;li&gt;CSE2100: Introduction to Data-structures and algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/&#34;&gt;CSE3100: System Programming (Fall&#39;15,Fall&#39;17)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=27&#34;&gt;CSE3150: C++ Essentials (Fall&#39;17,Spring&#39;17,Spring&#39;18)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://courses.cse.uconn.edu/moodle/course/view.php?id=74&#34;&gt;CSE3160: Functional Programming Essentials (in Haskell)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=13&#34;&gt;CSE4100: Compilers (Fall&#39;15)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=26&#34;&gt;CSE4102: Programming Languages (Spring&#39;17)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;CSE4300: Operating systems&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=19&#34;&gt;CSE5095: Discrete Optimization (Spring&#39;16)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;CSE5102: Advanced Programming Language&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I also taught CS4 at Brown University together with Nancy Pollard in the Fall of 2000.&lt;/p&gt;</description>
     </item>
   </channel>

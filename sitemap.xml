@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ldmbouge.github.io/basic/about/</loc>
+    <loc>http://localhost:1313/basic/about/</loc>
   </url><url>
-    <loc>https://ldmbouge.github.io/basic/roles/</loc>
+    <loc>http://localhost:1313/basic/roles/</loc>
   </url><url>
-    <loc>https://ldmbouge.github.io/basic/teaching/</loc>
+    <loc>http://localhost:1313/basic/teaching/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/tags/cp/</loc>
+    <loc>http://localhost:1313/tags/cp/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/minicpp/</loc>
+    <loc>http://localhost:1313/project/minicpp/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/talk/codd/</loc>
+    <loc>http://localhost:1313/talk/codd/</loc>
     <lastmod>2024-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/talk/binpacking/</loc>
+    <loc>http://localhost:1313/talk/binpacking/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/codd/</loc>
+    <loc>http://localhost:1313/project/codd/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/basic/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/</loc>
+    <loc>http://localhost:1313/basic/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/publication/</loc>
+    <loc>http://localhost:1313/project/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/talk/</loc>
+    <loc>http://localhost:1313/talk/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/haddock/</loc>
+    <loc>http://localhost:1313/project/haddock/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/talk/aes/</loc>
+    <loc>http://localhost:1313/talk/aes/</loc>
     <lastmod>2017-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/publication/aes/</loc>
+    <loc>http://localhost:1313/publication/aes/</loc>
     <lastmod>2017-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/publication/fpsearch/</loc>
+    <loc>http://localhost:1313/publication/fpsearch/</loc>
     <lastmod>2017-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/cyberseed/</loc>
+    <loc>http://localhost:1313/project/cyberseed/</loc>
     <lastmod>2017-07-28T11:27:25-04:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/tags/sec/</loc>
+    <loc>http://localhost:1313/tags/sec/</loc>
     <lastmod>2017-07-28T11:27:25-04:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/crypto/</loc>
+    <loc>http://localhost:1313/project/crypto/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/project/ocp/</loc>
+    <loc>http://localhost:1313/project/ocp/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ldmbouge.github.io/pandoc-bib-test-output/</loc>
+    <loc>http://localhost:1313/pandoc-bib-test-output/</loc>
   </url><url>
-    <loc>https://ldmbouge.github.io/pandoc-bib-test/</loc>
+    <loc>http://localhost:1313/pandoc-bib-test/</loc>
   </url><url>
-    <loc>https://ldmbouge.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://ldmbouge.github.io/publication/full/</loc>
+    <loc>http://localhost:1313/publication/full/</loc>
   </url>
 </urlset>

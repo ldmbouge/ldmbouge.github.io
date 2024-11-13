@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CP on Recent</title>
-    <link>https://ldmbouge.github.io/tags/cp/</link>
+    <link>http://localhost:1313/tags/cp/</link>
     <description>Recent content in CP on Recent</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ldmbouge.github.io/tags/cp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mini-C&#43;&#43;</title>
-      <link>https://ldmbouge.github.io/project/minicpp/</link>
+      <link>http://localhost:1313/project/minicpp/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/project/minicpp/</guid>
+      <guid>http://localhost:1313/project/minicpp/</guid>
       <description>A C++ Implementation of MiniCP</description>
     </item>
     <item>
       <title>CODD : Combinatorial Optimization with Decision Diagrams</title>
-      <link>https://ldmbouge.github.io/project/codd/</link>
+      <link>http://localhost:1313/project/codd/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/project/codd/</guid>
+      <guid>http://localhost:1313/project/codd/</guid>
       <description>CODD : a C++ library implementing the DDOpt framework</description>
     </item>
     <item>
       <title>Haddock : A Language and Architecture for Decision Diagram Compilation</title>
-      <link>https://ldmbouge.github.io/project/haddock/</link>
+      <link>http://localhost:1313/project/haddock/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/project/haddock/</guid>
+      <guid>http://localhost:1313/project/haddock/</guid>
       <description>&lt;p&gt;Haddock is &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cryptanalysis</title>
-      <link>https://ldmbouge.github.io/project/crypto/</link>
+      <link>http://localhost:1313/project/crypto/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/project/crypto/</guid>
+      <guid>http://localhost:1313/project/crypto/</guid>
       <description>Breaking Encryption with Optimization (and side-channel)</description>
     </item>
     <item>
       <title>Objective-CP</title>
-      <link>https://ldmbouge.github.io/project/ocp/</link>
+      <link>http://localhost:1313/project/ocp/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/project/ocp/</guid>
+      <guid>http://localhost:1313/project/ocp/</guid>
       <description>An Hybrid Optimization Platform</description>
     </item>
   </channel>

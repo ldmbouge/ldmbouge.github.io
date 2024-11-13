@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on Recent</title>
-    <link>https://ldmbouge.github.io/talk/</link>
+    <link>http://localhost:1313/talk/</link>
     <description>Recent content in Talks on Recent</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ldmbouge.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CODD: A Decision Diagram-Based Solver for Combinatorial Optimization</title>
-      <link>https://ldmbouge.github.io/talk/codd/</link>
+      <link>http://localhost:1313/talk/codd/</link>
       <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/talk/codd/</guid>
+      <guid>http://localhost:1313/talk/codd/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;We introduce CODD, a system for solving combinatorial optimization problems using decision diagram technology. Problems are represented as state-based dynamic programming models using the CODD language specification. The model specification is used to automatically compile relaxed and restricted decision diagrams that are embedded inside a branch-and-bound search process. We introduce abstractions that allow us to generically implement the solver components while maintaining overall execution efficiency. We demonstrate the functionality of CODD on a variety of combinatorial optimization problems and compare its performance to other state-based solvers as well as integer programming and constraint programming solvers. CODD provides competitive results and can outperform the other solvers, sometimes by orders of magnitude.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CP for Bin Packing with Multi-core and GPUs</title>
-      <link>https://ldmbouge.github.io/talk/binpacking/</link>
+      <link>http://localhost:1313/talk/binpacking/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/talk/binpacking/</guid>
+      <guid>http://localhost:1313/talk/binpacking/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;The BinPacking constraint models the requirements of many logistics, resource allocation, and&#xA;production scheduling applications. This paper explores new avenues based on the impressive&#xA;computational power of modern GPUs to propagate the BinPacking constraint. This work showcases&#xA;how the perspective of massive parallelization can lead to novel approaches, such as the use of a&#xA;portfolio of lower bounds, to enhance the pruning of the BinPacking constraints. It delivers insights&#xA;into the design choices and challenges presented by GPU platform for constraint propagation.&#xA;The paper evaluates a GPU-accelerated propagator against both sequential and parallel CPU&#xA;versions, as well as state-of-the-art approaches. Comparisons across various benchmarks from the&#xA;literature show strong performances with respect to both CPU versions and the standard pruning&#xA;approach. When compared to techniques based on Linear Programming, our approach proves&#xA;valuable for large instances or when spending extensive time to obtain the best possible bound is&#xA;not convenient.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Tolerant Algebraic Side-Channel Attack on AES Using CP</title>
-      <link>https://ldmbouge.github.io/talk/aes/</link>
+      <link>http://localhost:1313/talk/aes/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>https://ldmbouge.github.io/talk/aes/</guid>
+      <guid>http://localhost:1313/talk/aes/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;AES is a mainstream block cipher used in many protocols and whose resilience against attack is essential for cybersecurity. In [14], Oren et al. discuss a Tolerant Algebraic Side-Channel Analysis (TASCA) and show how to use optimization technology to exploit side-channel information and mount a computational attack against AES. This paper revisits the results and posits that Constraint Programming is a strong contender and a potent optimization solution. It extends bit-vector solving as introduced in [8], develops a CP and an IP model and compares them with the original Pseudo-Boolean formulation. The empirical results establish that CP can deliver solutions with orders of magnitude improvement in both run time and memory usage, traits that are essential to potential adoption by cryptographers.&lt;/p&gt;</description>
     </item>
   </channel>
