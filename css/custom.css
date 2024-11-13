@@ -1,0 +1,20 @@
+.mw8 {
+  max-width : 1500px;
+}
+
+td {
+	vertical-align:top;
+}
+	
+td:nth-child(1) {
+	background-color:lightgrey;
+	width:150px;
+	border-collaspe: collapse;
+	border-bottom : 0px;
+}
+
+
+.measure-wide {
+    max-width: 150em;
+}
+

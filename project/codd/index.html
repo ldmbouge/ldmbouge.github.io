@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODD : Combinatorial Optimization with Decision Diagrams | Recent</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="CODD : a C&#43;&#43; library implementing the DDOpt framework">
+    <meta name="generator" content="Hugo 0.138.0">
+    
+    
+	
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+	
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://ldmbouge.github.io/project/codd/">
+    
+
+    <meta property="og:url" content="https://ldmbouge.github.io/project/codd/">
+  <meta property="og:site_name" content="Recent">
+  <meta property="og:title" content="CODD : Combinatorial Optimization with Decision Diagrams">
+  <meta property="og:description" content="CODD : a C&#43;&#43; library implementing the DDOpt framework">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="project">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="CP">
+
+  <meta itemprop="name" content="CODD : Combinatorial Optimization with Decision Diagrams">
+  <meta itemprop="description" content="CODD : a C&#43;&#43; library implementing the DDOpt framework">
+  <meta itemprop="datePublished" content="2024-01-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-01-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="4872">
+  <meta itemprop="keywords" content="CP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CODD : Combinatorial Optimization with Decision Diagrams">
+  <meta name="twitter:description" content="CODD : a C&#43;&#43; library implementing the DDOpt framework">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://ldmbouge.github.io/img/c&#43;&#43;.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Recent
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/basic/" title="Laurent Michel page">
+              Laurent Michel
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/project/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publication/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/talk/" title="Talks page">
+              Talks
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pb3">
+        
+          <div class="f2 f1-l fw2 white-90 mv0 lh-title">CODD : Combinatorial Optimization with Decision Diagrams</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Projects
+      </aside><div id="sharing" class="mt3 ananke-socials"><a href="mailto:?&amp;body=https%3A%2F%2Fldmbouge.github.io%2Fproject%2Fcodd%2F&amp;subject=CODD&#43;%3A&#43;Combinatorial&#43;Optimization&#43;with&#43;Decision&#43;Diagrams"
+        class="ananke-social-link email no-underline"
+        title="Share on Email" aria-label="Share on Email"
+        target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
+                
+              </span></a><a href="https://www.linkedin.com/shareArticle?&amp;mini=true&amp;source=https%3A%2F%2Fldmbouge.github.io%2Fproject%2Fcodd%2F&amp;summary=CODD&#43;%3A&#43;a&#43;C%2B%2B&#43;library&#43;implementing&#43;the&#43;DDOpt&#43;framework&amp;title=CODD&#43;%3A&#43;Combinatorial&#43;Optimization&#43;with&#43;Decision&#43;Diagrams&amp;url=https%3A%2F%2Fldmbouge.github.io%2Fproject%2Fcodd%2F"
+        class="ananke-social-link linkedin no-underline"
+        title="Share on LinkedIn" aria-label="Share on LinkedIn"
+        target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                
+              </span></a><a href="%25!s%28%3cnil%3e%29?"
+        class="ananke-social-link github no-underline"
+        title="Share on GitHub" aria-label="Share on GitHub"
+        target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                
+              </span></a></div>
+<h1 class="f1 athelas mt3 mb1">CODD : Combinatorial Optimization with Decision Diagrams</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-01-01T00:00:00Z">January 1, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="what-is-codd">What is <strong>CODD</strong>?</h2>
+<p><strong>CODD</strong> is a system for modeling and solving combinatorial optimization
+problems using decision diagram technology. Problems are represented as
+state-based dynamic programming models using the CODD language
+specification. The model specification is used to automatically compile
+relaxed and restricted decision diagrams, as well as to guide the search
+process. <strong>CODD</strong> introduces abstractions that allow to generically
+implement the solver components while maintaining overall execution
+efficiency. We demonstrate the functionality of <strong>CODD</strong> on a variety of
+combinatorial optimization problems and compare its performance to other
+state-based solvers as well as integer programming and constraint
+programming solvers.</p>
+<p>We consider discrete optimization problems of the form
+</p>
+\[
+\begin{array}{rl}
+P : ~~ \max & f(y)\\
+\textrm{s.t.} & C_j(y), j = 1, \dots, m,\\
+& y \in D
+\end{array}
+\]<p>where \(y=(y_1,\ldots,y_n)\) is a tuple of decision variables, \(f\) is a
+real-valued objective function over \(y\) and \(C_1,\ldots,C_m\) are
+constraints over \(y\) with \(D=D_1 \times \ldots \times D_n\) denoting the
+cartesian product of the domains of the variables \(y_i\)
+(\(1 \leq i \leq n\)).</p>
+<h2 id="dynamic-programming-as-a-computational-model">Dynamic Programming as a Computational Model</h2>
+<p>Dynamic programming can be understood as a labeled transition system
+where sequences of state-based decisions that delivers a sequence of
+states \((s_1,\ldots,s_{n+1})\). At each step \(i\), a transition
+\(\tau(s_i,x_i) = s_i \stackrel{x_i}{\rightarrow} s_{i+1}\) is labeled by
+the decision \(x_i\). Each such transition induces a cost \(c(s_i,x_i)\).
+The DP formulation then boils down to:</p>
+<ul>
+<li>the definition of the state space \({\cal S}\) with
+\(s_i \in {\cal S}\).</li>
+<li>two distinguished states \(s_\top\) and \(s_\bot\) in \({\cal S}\)
+encoding, respectively, the start state for an empty sequence of
+decision and the sink state for the full problem</li>
+<li>a label generation function
+\(\lambda : {\cal S} \rightarrow {\cal U}\) representing the values
+one can use to follow a transition out of a state \(s \in {\cal S}\).</li>
+<li>The state transition function
+\(\tau : {\cal S} \times {\cal U} \rightarrow {\cal S}\) modeling the
+decisions effects</li>
+<li>The transition cost function
+\(c : {\cal S} \times {\cal U} \rightarrow \mathbb{R}\).</li>
+</ul>
+<p>The Dynamic Program over the state sequence \((s_1,\ldots,s_{n+1})\) and
+the decision sequence \((x_1,\ldots,x_{n})\) has the following form</p>
+\[
+\begin{array}{rll}
+\max & v(t) & \\
+\textrm{ s.t. } & v(s_{i+1}) = \displaystyle \max_{\substack{x_i \in \lambda(s_i)\\\tau(s_i,x_i)=s_{i+1}}} v(s_i) + c(s_i,x_i) & \forall s_i \in {\cal S} \setminus \{t\} \\
+ & v(r) = K
+\end{array}
+\]
+
+
+  <blockquote class="alert alert-important">
+    <p class="alert-heading">
+      ℹ️
+      
+        Important
+      
+    </p>
+    <p>Observe how the valuation function on the root state \(r\) is the constant
+\(K\). Also note how the constraints \((C_1,\ldots,C_m)\) are captured by
+the state transition function \(\tau\) and the value generator
+\(\lambda(s_i)\) that proposes appropriate values for decision \(x_i\) out
+of state \(s_i\).</p>
+
+  </blockquote>
+
+  
+<p>Clearly \(s_\top\)'s value is \(K\) and \(s_{n+1}=s_\bot\), a state
+satisfying all the constraints and corresponding to the full problem
+(all decisions were made). The valuation function \(v\) defined by the
+Bellman equation above accumulates the cost incurred along each
+transition and modeled by the cost function \(c\).</p>
+<p>The path with the globally optimal cost is the global optimum to the
+original maximization problem \(P\). Naturally, there are potentially
+exponentially many such path.</p>
+<h3 id="exact-decision-diagrams">Exact Decision Diagrams</h3>
+<p><strong>CODD</strong> provides (for generality's sake) an <em>exact</em> decision diagram
+that builds the state of the LTS just described and can therefore
+produce a globally optimal solution. While it is relatively direct, it
+requires the construction of an exponentially size structure and is
+therefore only useful as a proof of concept. Formally, the solution set
+of the exact decision diagram induced by \(DD_{Exact}(P)\) is identical to
+the solution set of \(P\), namely
+\({\cal Sol}(DD_{Exact}(P)) = {\cal Sol}(P)\).</p>
+<h3 id="restricted-decision-diagrams">Restricted Decision Diagrams</h3>
+<p><strong>CODD</strong> provides <em>restricted</em> decision diagrams. Those differ from
+exact diagram by discarding (during their top-down construction) nodes
+whose presence would lead to overflowing a maximal imposed <em>width</em>.
+Since the approach throws away states, and therefore <em>paths</em> it runs the
+risk of loosing the optimal solution. Yet, if they yield paths leading
+to \(s_\bot\), the best of them is a primal bound to the original problem.
+Formally, the solution set of the restricted decision diagram is a
+subset of the solution set of the original problem \(P\). Namely,
+\({\cal Sol}(DD_{Restricted}(P)) \subseteq {\cal Sol}(P)\).</p>
+<h3 id="relaxed-decision-diagrams">Relaxed Decision Diagrams</h3>
+<p><strong>CODD</strong> provides <em>relaxed</em> decision diagrams. Those differ from exact
+diagram by <em>merging</em> states whose presence would induce a diagram
+<em>width</em> exceeding a given bound. The state merge operator must be a
+legit relaxation in the following sense: it yields a state that no
+longer satisfies all constraints in \((C_1,\ldots,C_m)\). While the width
+ensure that the size of the diagram remains under control, it
+<em>introduces</em> new states that are no longer satisfiable. Path leading to
+\(s_\bot\) going through at least one such unsatisfiable state are no
+longer modeling a solution of the original problem. Formally, the
+solution set of the relaxed diagram is now a super set of the solution
+set of the original problem \(P\). Namely,
+\({\cal Sol}(DD_{Relaxed}(P)) \supseteq {\cal Sol}(P)\).</p>
+<p>From the above, one gets to derive primal bounds using the restricted
+diagrams and dual bounds using the relaxed one.</p>
+
+
+
+  <blockquote class="alert alert-important">
+    <p class="alert-heading">
+      ℹ️
+      
+        Important
+      
+    </p>
+    <p>Note how all three diagrams are based on the same LTS abstractions of
+states, labels, transitions, merge and costs and equality to \(s_\bot\).
+aThese abstractions are the core modeling facilities offered by <strong>CODD</strong>.</p>
+
+  </blockquote>
+
+  
+<h2 id="codd-modeling"><strong>CODD</strong> Modeling</h2>
+<p>Unsurprisingly, the abstractions presented above match exactly with the
+<strong>CODD</strong> API that expects:</p>
+<ul>
+<li>A structure to define a state</li>
+<li>Two distinguished states \(s_\top\) and \(s_\bot\) used to represent a
+state with no decisions made (\(s_\top\)) and all possible decision
+made (\(s_\bot\)).</li>
+<li>A label generation function \(\lambda\) which given a state \(s_i\),
+produces the set of potentially viable transitions</li>
+<li>A state transition function \(\tau\) which, given a state \(s_i\) and a
+potentially viable label \(\ell\), produces either nothing (\(\bot\)) or
+a new state \(s_{i+1}\) such that
+\(s_i \stackrel{x_i=\ell}{\longrightarrow} s_{i+1} \in \tau\).</li>
+<li>A cost function \(c\) which, given a state \(s_i\) and a viable label
+\(\ell\) produces the cost of the transition
+\(s_i \stackrel{x_i=\ell}{\longrightarrow} s_{i+1}\)</li>
+<li>An <em>optional</em> equality to \(s_\bot\) function that returns true
+whenever its input state <em>is</em> \(s_\bot\).</li>
+</ul>
+
+
+
+  <blockquote class="alert alert-note">
+    <p class="alert-heading">
+      ℹ️
+      
+        Note
+      
+    </p>
+    <p>An <em>optional</em> local dual bounding function which, given a state \(s_i\)
+compute a coarse dual bound for completing \(s_i\). <em>this optional
+abstraction</em> is helpful to quickly assess whether a state has any hope
+of leading to an improving \(s_\bot\). If a state does not, it can be
+discarded from the relaxation.</p>
+
+  </blockquote>
+
+  
+<p>Thankfully, C++ is a rich language supporting polymorphic types, first
+order and higher order functions. Those provide the basis to naturally
+convey the formal abstractions given above. The <em>state</em> become a <em>type</em>
+in C++ and all the other abstractions becomes first-order functions
+(lambdas in C++ parlance).</p>
+<h3 id="tsp-example-high-level">TSP Example High Level</h3>
+<p>Consider the task of solving instances of the traveling salesman
+problem. With the abstraction defined above, to express a TSP over a set
+of cities \(V=\{1..n\}\) we define:</p>
+<ul>
+<li>
+<p>Let a state \(s \in {\cal S}\) be a triplet \(\langle S,e,h\rangle\)
+with \(S \subseteq V\) the set of cities visited thus far, \(e\) the
+name of the city last visited (or 0 at the start), and \(h\) the
+number of hops made thus far (or 0 at the start).</p>
+</li>
+<li>
+<p>Let \(s_\top = \langle \{1\},1,0\rangle\) since no cities have been
+visited, hence last city is the depot 1 and the salesman did not do
+any &quot;hops&quot;.</p>
+</li>
+<li>
+<p>Let \(s_\bot = \langle V,1,n\rangle\). Indeed, without loss of
+generality, we will start from the depot 1 and thus <em>return</em> to the
+depot 1 (which will thus be the last visited). The trip will have
+carried out \(n\) hops and visited all cities in \(V\).</p>
+</li>
+<li>
+<p>The label generator is a function
+\(\lambda : {\cal S} \rightarrow {\cal U}\) defined as</p>
+</li>
+</ul>
+\[
+    \begin{array}{lccl}
+       \lambda(\langle S,e,h\rangle)  &=& V \setminus S & \Leftrightarrow h < n-1,\\ 
+        &=&\{1\} & \Leftrightarrow h=n-1
+     \end{array}
+\]<ul>
+<li>The state transition function
+\(\tau : {\cal S} \times {\cal L} \rightarrow {\cal S}\) is</li>
+</ul>
+\[
+\begin{array}{lcll}
+\tau(\langle S,e,h \rangle,\ell) &=& \langle V,\ell,n\rangle  & \Leftrightarrow \ell=1  \\
+&& \langle S \cup \{\ell\},\ell,h+1\rangle & \Leftrightarrow \mbox{otherwise} 
+\end{array}
+\]<p>The condition \(\ell=1\) indicates a return to the depot (1). The
+alternative extends the set of visited cities with \(\ell\) and adds one
+hop. Naturally, the cost function is straightforwardly defined as
+\(c(\langle S,e,h\rangle,\ell) = d_{e,\ell}\) while the merge operator
+\(\oplus(\langle S_1,e_1,h_1\rangle,\langle S_2,e_2,h_2\rangle) = \langle S_1 \cup S_2,e_1,h_1\rangle\)
+provided that \(e_1=e_2 \wedge h_1=h_2\).</p>
+<h3 id="tsp-example-in-codd">TSP Example in <strong>CODD</strong></h3>
+<p>Modeling with <strong>CODD</strong> first requires a type to represent a state. Since
+a state is a triplet, the model uses a <code>C</code> structure.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">TSP</span> {
+</span></span><span style="display:flex;"><span>       GNSet  s;
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">int</span> last;
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">int</span> hops;
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">friend</span> std<span style="color:#f92672">::</span>ostream<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">&lt;&lt;</span>(std<span style="color:#f92672">::</span>ostream<span style="color:#f92672">&amp;</span> os,<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> m) {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> os <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;&lt;&#34;</span> <span style="color:#f92672">&lt;&lt;</span> m.s <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">&lt;&lt;</span> m.last <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">&lt;&lt;</span> m.hops <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;&gt;&#34;</span>;
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>Note the additional (and optional) output operator used to inspect
+state. In addition to the state, <strong>CODD</strong> expects 2 standard operations
+on state. Equality testing and hashing. Namely,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">std</span><span style="color:#f92672">::</span>equal_to<span style="color:#f92672">&lt;</span>TSP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">constexpr</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">operator</span>()(<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s1,<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s2) <span style="color:#66d9ef">const</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> s1.last <span style="color:#f92672">==</span> s2.last <span style="color:#f92672">&amp;&amp;</span> s1.hops<span style="color:#f92672">==</span>s2.hops <span style="color:#f92672">&amp;&amp;</span> s1.s <span style="color:#f92672">==</span> s2.s;
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>Is a STL compliant implementation of equality testing for a type
+<code>T</code> which, here, is none other than the <code>TSP</code>
+structure. Likewise, the STL compliant fragment</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">std</span><span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span>TSP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>       std<span style="color:#f92672">::</span>size_t <span style="color:#66d9ef">operator</span>()(<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> v) <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">noexcept</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> (std<span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span>GNSet<span style="color:#f92672">&gt;</span>{}(v.s) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">24</span>) <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>             (std<span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>{}(v.last) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">16</span>) <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>             std<span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>{}(v.hops);
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>defines a <code>hash</code> operator for the state type
+<code>TSP</code>. Both state equality and state hashing are used
+internally by <strong>CODD</strong>. Given \(V\) a constant set holding the set of
+cities and \(n\) its size, it is now easy to define both \(s_\top\) and
+\(s_\bot\) with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> init <span style="color:#f92672">=</span> []() {   <span style="color:#75715e">// The root state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       <span style="color:#66d9ef">return</span> TSP { GNSet{<span style="color:#ae81ff">1</span>},<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span> };
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> target <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>V,n]() {    <span style="color:#75715e">// The sink state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       <span style="color:#66d9ef">return</span> TSP { V,<span style="color:#ae81ff">1</span>,n };
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>Note how the <code>init</code> and the <code>target</code> closures can
+be called to manufacture the desired states. The label generation
+function is also defined with a simple closure</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> lgf <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>V,n](<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s)  {
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> (s.hops <span style="color:#f92672">==</span> n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> GNSet {<span style="color:#ae81ff">1</span>};
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">else</span> 
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> V <span style="color:#f92672">-</span> s.s;
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>The body of the closure uses the capture set of cities <code>V</code>
+and returns a singleton with just the depot city (1) if this is the last
+hop or \(V \setminus s.s\) otherwise.</p>
+<p>The function \(\tau\) is, unsurprisingly, another closure (which captures
+<code>n</code> and <code>V</code> denoting, respectively, the number of
+cities and the set of all cities.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> stf <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>V,n](<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s,<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> label) <span style="color:#f92672">-&gt;</span> std<span style="color:#f92672">::</span>optional<span style="color:#f92672">&lt;</span>TSP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (label<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">return</span> TSP { V,<span style="color:#ae81ff">1</span>,n};
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> 
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">return</span> TSP { s.s <span style="color:#f92672">|</span> GNSet{label},label,s.hops <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>};     
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>The case analysis carried out in the code mirrors exactly the formal
+definition. If the value \(label\) indicates a return to the depot, we
+return the sink state. Otherwise, we add \(label\) to the set of visited
+cities \(s.s\), set the last visited city as \(label\) and increase the
+number of hops by 1.</p>
+<p>The cost of a transition is also modeled with a closure that captures
+the distance matrix \(d\) and reads:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> scf <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>d](<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s,<span style="color:#66d9ef">int</span> label) { <span style="color:#75715e">// partial cost function 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       <span style="color:#66d9ef">return</span> d[s.e][label];
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p>The state merge \(\oplus\) is simply:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> smf <span style="color:#f92672">=</span> [](<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s1,<span style="color:#66d9ef">const</span> TSP<span style="color:#f92672">&amp;</span> s2) <span style="color:#f92672">-&gt;</span> std<span style="color:#f92672">::</span>optional<span style="color:#f92672">&lt;</span>TSP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> (s1.last <span style="color:#f92672">==</span> s2.last <span style="color:#f92672">&amp;&amp;</span> s1.hops <span style="color:#f92672">==</span> s2.hops) 
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> TSP {s1.s <span style="color:#f92672">&amp;</span> s2.s , s1.last, s1.hops};
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">return</span> std<span style="color:#f92672">::</span>nullopt; <span style="color:#75715e">// return  the empty optional
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    };
+</span></span></code></pre></div><p>Observe how this closure takes two states \(s_1\) and \(s_2\) and considers
+them mergeable if they both end in the same city and have the same
+number of hops. The relaxation stems from the fact that the set
+<em>intersection</em> between \(s_1.s\) and \(s_2.s\) will only retain cities that
+were visited in both.</p>
+<p>Finally, the equality to the sink (target) state is also closure:</p>
+<pre><code>const auto eqs = [n](const TSP&amp; s) -&gt; bool {
+   return s.last == 1 &amp;&amp; s.hops == n;
+};  
+</code></pre>
+<p>Which deems state \(s\) equal to the sink if the last city is 1 and we
+have the desired number of hops \(sz\).</p>
+<h2 id="codd-solving"><strong>CODD</strong> Solving</h2>
+<p>Solving the TSP then reduces to <em>instantiating</em> the generic solver with
+all the closures defined earlier. Namely:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    BAndB <span style="color:#a6e22e">engine</span>(DD<span style="color:#f92672">&lt;</span>TSP,Minimize<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">double</span><span style="color:#f92672">&gt;</span>, <span style="color:#75715e">// to minimize
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                 <span style="color:#66d9ef">decltype</span>(target),
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">decltype</span>(lgf),
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">decltype</span>(stf),
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">decltype</span>(scf),
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">decltype</span>(smf),
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">decltype</span>(eqs)
+</span></span><span style="display:flex;"><span>                 <span style="color:#f92672">&gt;::</span>makeDD(init,target,lgf,stf,scf,smf,eqs,labels),<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    engine.search(bnds);
+</span></span></code></pre></div><p>Note how the <code>DD</code> template is specialized with the state type
+<code>TSP</code>, the type <code>Minimize&lt;double&gt;</code> to convey that
+this is a minimization, and the types of the various closures using the
+C++-23 <code>decltype</code> operator. The solver is invoked with the
+last line.</p>
+
+
+
+  <blockquote class="alert alert-important">
+    <p class="alert-heading">
+      ℹ️
+      
+        Important
+      
+    </p>
+    <p><strong>CODD</strong> users never directly call any of those closures. Calls to the
+closures are choreographed by the solver to build the diagrams and
+reason with them. <strong>CODD</strong> users are strictly focused on defining the DP
+LTS in a mathematical sense and then doing the 1-1 translation to C++.</p>
+
+  </blockquote>
+
+  
+<h2 id="installing-codd">Installing CODD</h2>
+<h3 id="download">Download</h3>
+<p>The CODD solver is available on
+<a href="https://github.com/ldmbouge/CPPddOpt">github</a>.</p>
+<h3 id="compilation">Compilation</h3>
+<p>The CODD C++ library implements both the modeling and the solving
+framework. It extensively relies on functional closures to deliver
+concise, declarative and elegant models. It has:</p>
+<ul>
+<li>Restricted / exact / relax diagrams</li>
+<li>State definition, initial, terminal, tranistion and state merging
+functions separated</li>
+<li>Label generation functions</li>
+<li>Equivalence predicate for sink.</li>
+</ul>
+<p>It allows to define model to solve problems using a dynamic programming
+style with the support of underlying decision diagrams.</p>
+<h4 id="dependencies">Dependencies</h4>
+<p>You need <code>graphviz</code> (The <code>dot</code> binary) to create graph images. It
+happens automatically when the <code>display</code> method is called. Temporary
+files are created in <code>/tmp</code> and the macOS <code>open</code> command is used (via
+<code>fork/execlp</code>) to open the generated PDF. The rest of the system is
+vanilla C++-23 and <code>cmake</code>.</p>
+
+
+
+  <blockquote class="alert alert-hint">
+    <p class="alert-heading">
+      
+      
+        Hint
+      
+    </p>
+    <p>Keep in mind that this is optional and only needed if you wish to
+generate images of diagrams (typically to debug models).</p>
+
+  </blockquote>
+
+  
+<h4 id="c-standard">C++ Standard</h4>
+<p>You need a C++-23 capable compiler. gcc and clang should both work. I
+work on macOS where I use the mainline clang coming with Xcode. The
+implementation uses templates and concepts to factor the code.</p>
+<h4 id="build-system">Build system</h4>
+<p>This is <code>cmake</code>. Simply do the following</p>
+<p>And it will compile the whole thing. To compile in optimized mode,
+simply change the variable <code>CMAKE_BUILD_TYPE</code> from <code>Debug</code> to <code>Release</code>
+as shown below:</p>
+<h4 id="unit-tests">Unit tests</h4>
+<p>In the <code>test</code> folder. Mostly for the low-level containers.</p>
+<h4 id="library">Library</h4>
+<p>All of it in the <code>src</code> folder.</p>
+<div class="highlight shell" dir="." exports="both"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scc  -i cpp,org,h,hpp ..
+</span></span></code></pre></div><p>|            |       |       |        |          |      |            |</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Language</th>
+          <th style="text-align: right">Files</th>
+          <th style="text-align: right">Lines</th>
+          <th style="text-align: right">Blanks</th>
+          <th style="text-align: right">Comments</th>
+          <th style="text-align: right">Code</th>
+          <th style="text-align: right">Complexity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">C++</td>
+          <td style="text-align: right">29</td>
+          <td style="text-align: right">4288</td>
+          <td style="text-align: right">298</td>
+          <td style="text-align: right">274</td>
+          <td style="text-align: right">3716</td>
+          <td style="text-align: right">670</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">C++ Header</td>
+          <td style="text-align: right">15</td>
+          <td style="text-align: right">3098</td>
+          <td style="text-align: right">132</td>
+          <td style="text-align: right">338</td>
+          <td style="text-align: right">2628</td>
+          <td style="text-align: right">431</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">JSON</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">70</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">0</td>
+          <td style="text-align: right">69</td>
+          <td style="text-align: right">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Org</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">771</td>
+          <td style="text-align: right">97</td>
+          <td style="text-align: right">0</td>
+          <td style="text-align: right">674</td>
+          <td style="text-align: right">100</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Markdown</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">167</td>
+          <td style="text-align: right">74</td>
+          <td style="text-align: right">0</td>
+          <td style="text-align: right">93</td>
+          <td style="text-align: right">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CMake</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">81</td>
+          <td style="text-align: right">14</td>
+          <td style="text-align: right">13</td>
+          <td style="text-align: right">54</td>
+          <td style="text-align: right">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">HTML</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">1101</td>
+          <td style="text-align: right">80</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">1020</td>
+          <td style="text-align: right">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">gitignore</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">0</td>
+          <td style="text-align: right">0</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Total</td>
+          <td style="text-align: right">55</td>
+          <td style="text-align: right">9580</td>
+          <td style="text-align: right">696</td>
+          <td style="text-align: right">626</td>
+          <td style="text-align: right">8258</td>
+          <td style="text-align: right">1202</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<p>To be found in the <code>examples</code> folder</p>
+<ul>
+<li><code>coloringtoy</code> tiny coloring bench (same as in python)</li>
+<li><code>foo</code> maximum independent set (toy size)</li>
+<li><code>tstpoy</code> tiny TSP instance (same as in python)</li>
+<li><code>gruler</code> golomb ruler (usage &lt;size&gt; &lt;ubOnLabels&gt;)</li>
+<li><code>misp</code> the maximum independent set problem</li>
+</ul>
+<h2 id="the-maximum-independent-set-problem-misp">The Maximum Independent Set Problem (MISP)</h2>
+<p>It is, perhaps, most effective to look at some models to get a
+reasonable sense of the effort it takes to model and solve a problem
+with <strong>CODD</strong>.</p>
+<h3 id="preamble">Preamble</h3>
+<p>To start using <strong>CODD</strong>, it is sufficent to include its main header as
+follow</p>
+<div class="highlight" id="preamble"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;codd.hpp&#34;</span><span style="color:#75715e">
+</span></span></span></code></pre></div><h3 id="reading-the-instance">Reading the instance</h3>
+<div class="highlight" id="readingInput"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">GE</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span> a,b;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">bool</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">==</span>(<span style="color:#66d9ef">const</span> GE<span style="color:#f92672">&amp;</span> e1,<span style="color:#66d9ef">const</span> GE<span style="color:#f92672">&amp;</span> e2) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> e1.a <span style="color:#f92672">==</span> e2.a <span style="color:#f92672">&amp;&amp;</span> e1.b <span style="color:#f92672">==</span> e2.b;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">friend</span> std<span style="color:#f92672">::</span>ostream<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">&lt;&lt;</span>(std<span style="color:#f92672">::</span>ostream<span style="color:#f92672">&amp;</span> os,<span style="color:#66d9ef">const</span> GE<span style="color:#f92672">&amp;</span> e) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> os  <span style="color:#f92672">&lt;&lt;</span> e.a <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;--&gt;&#34;</span> <span style="color:#f92672">&lt;&lt;</span> e.b;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Instance</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span> nv;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span> ne;
+</span></span><span style="display:flex;"><span>   std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span>GE<span style="color:#f92672">&gt;</span> edges;
+</span></span><span style="display:flex;"><span>   FArray<span style="color:#f92672">&lt;</span>GNSet<span style="color:#f92672">&gt;</span> adj;
+</span></span><span style="display:flex;"><span>   Instance() <span style="color:#f92672">:</span> adj(<span style="color:#ae81ff">0</span>) {}
+</span></span><span style="display:flex;"><span>   Instance(Instance<span style="color:#f92672">&amp;&amp;</span> i) <span style="color:#f92672">:</span> nv(i.nv),ne(i.ne),edges(std<span style="color:#f92672">::</span>move(i.edges)) {}
+</span></span><span style="display:flex;"><span>   GNSet <span style="color:#a6e22e">vertices</span>() {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> setFrom(std<span style="color:#f92672">::</span>views<span style="color:#f92672">::</span>iota(<span style="color:#ae81ff">0</span>,nv));
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">auto</span> <span style="color:#a6e22e">getEdges</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">noexcept</span> { <span style="color:#66d9ef">return</span> edges;}
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">convert</span>() {
+</span></span><span style="display:flex;"><span>      adj <span style="color:#f92672">=</span> FArray<span style="color:#f92672">&lt;</span>GNSet<span style="color:#f92672">&gt;</span>(nv<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span><span style="color:#f92672">&amp;</span> e : edges) {
+</span></span><span style="display:flex;"><span>         adj[e.a].insert(e.b);
+</span></span><span style="display:flex;"><span>         adj[e.b].insert(e.a);
+</span></span><span style="display:flex;"><span>      }         
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Instance <span style="color:#a6e22e">readFile</span>(<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> fName)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>   Instance i;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>   ifstream f(fName);
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">while</span> (<span style="color:#f92672">!</span>f.eof()) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">char</span> c;
+</span></span><span style="display:flex;"><span>      f <span style="color:#f92672">&gt;&gt;</span> c;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (f.eof()) <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">switch</span>(c) {
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            std<span style="color:#f92672">::</span>string line;
+</span></span><span style="display:flex;"><span>            std<span style="color:#f92672">::</span>getline(f,line);
+</span></span><span style="display:flex;"><span>         }<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;p&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            string w;
+</span></span><span style="display:flex;"><span>            f <span style="color:#f92672">&gt;&gt;</span> w <span style="color:#f92672">&gt;&gt;</span> i.nv <span style="color:#f92672">&gt;&gt;</span> i.ne;
+</span></span><span style="display:flex;"><span>         }<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;e&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            GE edge;
+</span></span><span style="display:flex;"><span>            f <span style="color:#f92672">&gt;&gt;</span> edge.a <span style="color:#f92672">&gt;&gt;</span> edge.b;
+</span></span><span style="display:flex;"><span>            edge.a<span style="color:#f92672">--</span>,edge.b<span style="color:#f92672">--</span>;      <span style="color:#75715e">// make it zero-based
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            assert(edge.a <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>            assert(edge.b <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>            i.edges.push_back(edge);
+</span></span><span style="display:flex;"><span>         }<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>   f.close();
+</span></span><span style="display:flex;"><span>   i.convert();
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> i;
+</span></span><span style="display:flex;"><span>}  
+</span></span></code></pre></div><p>The C structure <code>GE</code> is meant to represent a <em>graph edge</em>. It
+inlines a friend function to print edges and an equality operator. The C
+struct <code>Instance</code> is used to encapsulate an instance of the
+MISP problem read from a text file. It holds the number of vertices
+<code>nv</code>, the number of edges <code>ne</code>, the list of
+<code>edges</code> and computes and holds the adjacency list
+<code>adj</code>. The latter is computed by the <code>convert</code>
+method which simply scans the edges in <code>edges</code> and adds the
+endpoints in the respective sets of the adjacency vector. Note that the
+vertices are numbered from 0 onward (so the last vertex number is
+<code>nv - 1</code>).</p>
+<p>The <code>readFile</code> function produces an <code>Instance</code>
+from a named file <code>fName</code>. Note how it shifts the vertex
+identifiers of edges down by 1 since the standard instances use a
+1-based numbering scheme rather than a 0-based numbering scheme.</p>
+<h3 id="state-definition">State definition</h3>
+<div class="highlight" id="state"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">MISP</span> {
+</span></span><span style="display:flex;"><span>   GNSet sel;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">int</span>   n;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">friend</span> std<span style="color:#f92672">::</span>ostream<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">&lt;&lt;</span>(std<span style="color:#f92672">::</span>ostream<span style="color:#f92672">&amp;</span> os,<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> m) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> os <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;&lt;&#34;</span> <span style="color:#f92672">&lt;&lt;</span> m.sel <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">&lt;&lt;</span> m.n <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;&gt;&#34;</span>;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">std</span><span style="color:#f92672">::</span>equal_to<span style="color:#f92672">&lt;</span>MISP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">operator</span>()(<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s1,<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s2) <span style="color:#66d9ef">const</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> s1.n <span style="color:#f92672">==</span> s2.n <span style="color:#f92672">&amp;&amp;</span> s1.sel <span style="color:#f92672">==</span> s2.sel;         
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">std</span><span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span>MISP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>   std<span style="color:#f92672">::</span>size_t <span style="color:#66d9ef">operator</span>()(<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> v) <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">noexcept</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> std<span style="color:#f92672">::</span>rotl(std<span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span>GNSet<span style="color:#f92672">&gt;</span>{}(v.sel),<span style="color:#ae81ff">32</span>) <span style="color:#f92672">^</span> std<span style="color:#f92672">::</span>hash<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>{}(v.n);
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>The <code>MISP</code> struct defines the state representation for the DP
+model. For the <em>maximum independent set problem</em> the state is simply a
+set of integers named <code>sel</code> and an integer <code>n</code>
+representing the index of the next vertex to consider for inclusion (or
+exclusion) from the independent set. The next two classe are standard
+C++ and define the following:</p>
+<ul>
+<li>
+<p><code>std::equal_to&lt;MISP&gt;</code>: this structure conforms to the STL
+and defines as equality operator over the state <code>MISP</code></p>
+</li>
+<li>
+<p><code>sth::hash&lt;MISP&gt;</code>: this structure conforms to the STL and
+defines a hash function for</p>
+<p>the state <code>MISP</code>. Note how it uses the hash functions for
+the <code>int</code> type and the <code>GNSet</code> types provided
+by the STL or the <code>CODD</code> library.</p>
+</li>
+</ul>
+<h3 id="main-model">Main Model</h3>
+<h4 id="getting-started">Getting started</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc,<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> argv[])
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e">// using STL containers for the graph
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       <span style="color:#66d9ef">if</span> (argc <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>          std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;usage: coloring &lt;fname&gt; &lt;width&gt;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>          exit(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> fName <span style="color:#f92672">=</span> argv[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> w <span style="color:#f92672">=</span> argc<span style="color:#f92672">==</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">?</span> atoi(argv[<span style="color:#ae81ff">2</span>]) <span style="color:#f92672">:</span> <span style="color:#ae81ff">64</span>;
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">auto</span> instance <span style="color:#f92672">=</span> readFile(fName);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">const</span> GNSet ns <span style="color:#f92672">=</span> instance.vertices();
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> top <span style="color:#f92672">=</span> ns.size();
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span>GE<span style="color:#f92672">&gt;</span> es <span style="color:#f92672">=</span> instance.getEdges();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> labels <span style="color:#f92672">=</span> ns <span style="color:#f92672">|</span> GNSet { top };     <span style="color:#75715e">// using a plain set for the labels
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> weight(ns.size()<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>       weight[top] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> v : ns) weight[v] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>       ...
+</span></span></code></pre></div><p>The <code>main</code> program simply gets the filename from the command
+line and reads the instance from the file. It then extract in
+<code>ns</code> the set of vertices, in <code>top</code> its cardinality
+and in <code>es</code> the list of edges. The last four lines define the
+<code>labels</code> to be used (the identifier of all vertices together
+with <code>top</code> to encode the transition to the final state in the
+decision diagram). They also define the weights of the vertices. Since
+the instances are cliques (from the DIMACS challenge), the
+<code>weight</code> of every vertex is 1 while the <code>weight</code>
+of <code>top</code> is 0.</p>
+<h4 id="the-bound-tracker">The Bound Tracker</h4>
+<p>The maximum independent set is an optimization (maximization) problem.
+CODD needs to track solutions as they get produces and offers the
+opportunity to execute an arbitrary code fragment when a new solution
+somes forth. This code fragment can be used, for instance, to check the
+correctness of the solution.</p>
+<p>This task is the responsibility of the <code>Bounds</code> object.
+Minimally, one simply must declare an instance as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>Bounds bnds;
+</span></span></code></pre></div>
+
+
+  <blockquote class="alert alert-attention">
+    <p class="alert-heading">
+      
+      
+        Attention
+      
+    </p>
+    <p>In the MISP example, we illustrate how to respond to incoming solutions.
+In this case the <code>Bounds</code> instance uses a C++ lambda (a
+closure) that will be fed a solution <code>inc</code>, i.e., a vector of
+labels.</p>
+
+  </blockquote>
+
+  
+<p>Consider the example below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>Bounds <span style="color:#a6e22e">bnds</span>([<span style="color:#f92672">&amp;</span>es](<span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&amp;</span> inc)  {
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">bool</span> ok <span style="color:#f92672">=</span> true;    
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span><span style="color:#f92672">&amp;</span> e : es) {         
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">bool</span> v1In <span style="color:#f92672">=</span> (e.a <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">int</span>)inc.size()) <span style="color:#f92672">?</span> inc[e.a] <span style="color:#f92672">:</span> false;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">bool</span> v2In <span style="color:#f92672">=</span> (e.b <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">int</span>)inc.size()) <span style="color:#f92672">?</span> inc[e.b] <span style="color:#f92672">:</span> false;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span> (v1In <span style="color:#f92672">&amp;&amp;</span> v2In) {
+</span></span><span style="display:flex;"><span>             std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> e <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; BOTH ep in inc: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> inc <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>             assert(false);
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>          ok <span style="color:#f92672">&amp;=</span> <span style="color:#f92672">!</span>(v1In <span style="color:#f92672">&amp;&amp;</span> v2In);
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>       std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;CHECKER is &#34;</span> <span style="color:#f92672">&lt;&lt;</span> ok <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>    });
+</span></span></code></pre></div><p>The closure first <em>captures</em> the set of edges (by reference) as checking
+the validity of a solution simply entails looping over all edges and
+making sure that not both endpoints of an edge are included in the
+solution. The <code>for</code> loop binds <code>e</code> to an edge and,
+provided that the endpoints are mentioned in the solution, looks up the
+Boolean associated to the vertex in the solution. Note how the solution
+<code>inc</code> can be a prefix of the full vertex list (hence the
+conditional expression). If both endpoints are mentionned in the
+solution, the computation is aborted as this would indicate a bug in the
+model.</p>
+<h4 id="defining-neighbors">Defining neighbors</h4>
+<p>The main model will make use of the adjacency list, so it is advisable
+to hold into a variable <code>neighbors</code> the adjacency list for
+the graph.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">auto</span> neighbors <span style="color:#f92672">=</span> instance.adj;
+</span></span></code></pre></div><h4 id="the-actual-codd-model">The actual CODD Model</h4>
+<p>A CODD model capture a label transition system (LTS). This LTS operates
+on nodes holding states for the problem. In the case of the maximum
+independent set, the states are <code>MISP</code> instances. The LTS
+starts from a <em>source</em> node and forms paths that ultimately target a
+<em>sink</em> state. A path in the LTS moves from state to state by <em>generating
+labels</em> and using a <em>transition</em> function. Each such transition can
+incur a <em>cost</em>.</p>
+<p>The CODD solver uses a branch &amp; bound strategy with both a primal and a
+dual bound. Primal bounds are produced as a matter of course each time
+an incumbent solution is found, but also through the used of
+<strong>restricted decision diagrams</strong>. Likewise, dual bounds are produced by
+<strong>relaxed decision diagrams</strong>. Such relaxed diagrams rely on <em>merge</em>
+operations to collapse state.</p>
+<p>CODD models all the italicized concepts outlined in the prior paragraphs
+with C++ closures. The remainder of this section presents them, one at a
+time.</p>
+<ol>
+<li>
+<p>The Start State Closure</p>
+<p>The root, start or source state in the MISP application simly holds
+in the <code>sel</code> property of the state the indices of all
+legal vertices and holds in <code>n</code> the value 0 to report
+that the next decision is to be about vertex 0. Note how the code
+below uses the STL <code>std::views::iota</code> to loop over the
+closed range </p>
+\[0,top\]<p> and insert each value <code>i</code> in the
+set <code>U</code> that is then used to create and return the root
+state.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> myInit <span style="color:#f92672">=</span> [top]() {   <span style="color:#75715e">// The root state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            GNSet U <span style="color:#f92672">=</span> {}; 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> i : std<span style="color:#f92672">::</span>views<span style="color:#f92672">::</span>iota(<span style="color:#ae81ff">0</span>,top))
+</span></span><span style="display:flex;"><span>               U.insert(i);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> MISP { U , <span style="color:#ae81ff">0</span>};
+</span></span><span style="display:flex;"><span>         };
+</span></span></code></pre></div><ol start="2">
+<li>
+<p>The Sink State Closure</p>
+<p>The sink state is chosen, by convention, to hold an empty set for
+the remaining legal vertices (so no more decision beyond this point)
+and <code>top</code> as the next vertex to consider since top is the
+index of the last vertex plus 1. Note how the closure capture the
+<code>top</code> local variable.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> myTarget <span style="color:#f92672">=</span> [top]() {    <span style="color:#75715e">// The sink state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>           <span style="color:#66d9ef">return</span> MISP { GNSet {},top};
+</span></span><span style="display:flex;"><span>        };
+</span></span></code></pre></div><ol start="3">
+<li>
+<p>The Label Generation Closure</p>
+<p>Moving from one state to the next involves making a decision about
+the next vertex to be consider for inclusion. Observe that the
+identity of that vertex is held in the <code>n</code> property of
+the state we are departing. The decision, in this case, is a binary
+choice. Either we include <code>n</code> or we do not. So the label
+generation function returns the closed range </p>
+\[0,1\]<p> as the valid
+outgoing labels. Note how the closure takes as input the source
+state <code>s</code> (yet, for the MISP model, the source state is
+not used for any purposes.).</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> lgf <span style="color:#f92672">=</span> [](<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s)  {
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">return</span> Range<span style="color:#f92672">::</span>close(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>        }; 
+</span></span></code></pre></div><ol start="4">
+<li>
+<p>The State transition Closure</p>
+<p>the state transition closure is the heart of the model. It specifies
+what state to go to when leaving <code>s</code> through label
+<code>label</code>. Observe that <code>s</code> dictates which
+vertex to consider in <code>s.n</code>. Two cases arise:</p>
+<ul>
+<li>\(s.n \geq top\) In this situation, we ran out of vertices. If the
+remaining legal set is empty (\(s.sel = \emptyset\)) then we ought
+to transition to the sink as we are closing a viable path.
+Otherwise, this is a &quot;dead-end&quot; and the code return nothing
+(<code>std::nullopt</code>) as the API uses the C++ optional
+type to convey the absence of a transition.</li>
+<li>\(s.n < top\) In this situation, we can decide to include
+<code>s.n</code> in the MISP provided that it is still legal
+(i.e., provided that \(s.n \in s.sel\)). The first line of the
+second case therefore commits to not transitioning whenever
+\(s.n \notin s.sel \wedge label=True\) and thus return
+<code>std::nullopt</code>. Otherwise, <code>s.n</code> is
+eligible (because it is either to be excluded, or it is still
+legal) and the new state is computed. The new state
+\(out = s.sel \setminus N(s.n) \setminus \{s.n\}\) where \(N(s.n)\)
+refers to the neighbors of \(s.n\). The <code>diffWith</code>
+method implements the set difference calculation. Finally, the
+result state holds <code>out</code> and sets the next vertex to
+consider to be \(top\) if \(out = \emptyset\) or \(s.n + 1\)
+otherwise.</li>
+</ul>
+<!-- raw HTML omitted -->
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">auto</span> myStf <span style="color:#f92672">=</span> [top,<span style="color:#f92672">&amp;</span>neighbors](<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s,<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> label) <span style="color:#f92672">-&gt;</span> std<span style="color:#f92672">::</span>optional<span style="color:#f92672">&lt;</span>MISP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (s.n <span style="color:#f92672">&gt;=</span> top) {
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> (s.sel.empty()) 
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">return</span> MISP { GNSet {}, top};
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">return</span> std<span style="color:#f92672">::</span>nullopt;
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>s.sel.contains(s.n) <span style="color:#f92672">&amp;&amp;</span> label) <span style="color:#66d9ef">return</span> std<span style="color:#f92672">::</span>nullopt; 
+</span></span><span style="display:flex;"><span>               GNSet out <span style="color:#f92672">=</span> s.sel;
+</span></span><span style="display:flex;"><span>               out.remove(s.n);   <span style="color:#75715e">// remove n from state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>               <span style="color:#66d9ef">if</span> (label) out.diffWith(neighbors[s.n]); 
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">bool</span> empty <span style="color:#f92672">=</span> out.empty();  <span style="color:#75715e">// find out if we are done!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>               <span style="color:#66d9ef">return</span> MISP { std<span style="color:#f92672">::</span>move(out),empty <span style="color:#f92672">?</span> top : s.n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>}; <span style="color:#75715e">// build state accordingly
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            }
+</span></span><span style="display:flex;"><span>         };
+</span></span></code></pre></div><ol start="5">
+<li>
+<p>The transition Cost Closure</p>
+<p>Each transition from a state to another incurs a cost based on the
+source state and the label used to transition out. CODD once again
+relies on a closure to report this cost. In the code fragment below,
+note how the closure capture a reference to the <code>weight</code>
+vector and uses the identity of the vertex being labeled
+<code>s.n</code> as well as the <code>label</code> itself (a 0/1
+value) to compute and return the actual cost.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> scf <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>weight](<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s,<span style="color:#66d9ef">int</span> label) { <span style="color:#75715e">// cost function 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>           <span style="color:#66d9ef">return</span> label <span style="color:#f92672">*</span> weight[s.n];
+</span></span><span style="display:flex;"><span>        };
+</span></span></code></pre></div><ol start="6">
+<li>
+<p>The State Merge Closure</p>
+<p>CODD computes its dual bound with a relaxation that <em>merges</em> state.
+The implementation uses a closure which, given two states \(s_1\) and
+\(s_2\) determines whether the two states are mergeable and returns a
+new state if they are, or the <code>std::nullopt</code> optional if
+they are not.</p>
+<p>In the MISP case, states are always mergeable and the merge result
+is none other than the union of the two eligible sets of vertices
+and the minimum identifier for the next vertex. In the code below
+the C++ operator <code>|</code> conveys the union of the two sets.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> smf <span style="color:#f92672">=</span> [](<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s1,<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s2) <span style="color:#f92672">-&gt;</span> std<span style="color:#f92672">::</span>optional<span style="color:#f92672">&lt;</span>MISP<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">return</span> MISP {s1.sel <span style="color:#f92672">|</span> s2.sel,std<span style="color:#f92672">::</span>min(s1.n,s2.n)};
+</span></span><span style="display:flex;"><span>        };
+</span></span></code></pre></div><ol start="7">
+<li>Local Bound Closure</li>
+</ol>
+
+
+
+  <blockquote class="alert alert-caution">
+    <p class="alert-heading">
+      ❗
+      
+        Caution
+      
+    </p>
+    <p>CODD can use an <em>optional</em> closure to quickly compute dual bounds
+associated to states of the LTS. The optional <code>local</code>
+closure is therefore typically lightweight.</p>
+
+  </blockquote>
+
+  
+<p>In the case of MISP, a simple dual bound consist of summing up the
+weight of all the vertices that are still eligible. This is clearly
+an overestimate as some of these vertices will be ruled out. But
+it's cheap to compute!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> local <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>weight](<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">double</span> {
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sum</span>(s.sel,[<span style="color:#f92672">&amp;</span>weight](<span style="color:#66d9ef">auto</span> v) { <span style="color:#66d9ef">return</span> weight[v];});
+</span></span><span style="display:flex;"><span>        };      
+</span></span></code></pre></div><ol start="8">
+<li>
+<p>Recognizing the Sink</p>
+<p>CODD uses one last (mandatory) closure to establish equality to the
+sink. It does not rely on the equality operator as recognizing the
+sink may not require to test all its attributes for equality, but
+only a subset of them.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> eqs <span style="color:#f92672">=</span> [](<span style="color:#66d9ef">const</span> MISP<span style="color:#f92672">&amp;</span> s) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">bool</span> {
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">return</span> s.sel.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        };
+</span></span></code></pre></div><ol start="9">
+<li>
+<p>Wrapping up</p>
+<p>Now that all the mandatory (and optional) closures are defined, it
+only remains to instantiate the generic solver with the closures
+given above and invoke it.</p>
+</li>
+</ol>
+
+
+
+  <blockquote class="alert alert-hint">
+    <p class="alert-heading">
+      
+      
+        Hint
+      
+    </p>
+    <p>The type <code>Maximize&lt;double&gt;</code> is used to convey that this
+is a maximization problem while the nested <code>double</code> type
+is the type used to track the objective function value and is
+currently always <code>double</code>. CODD supports
+<code>Minimize&lt;double&gt;</code> as well.</p>
+
+  </blockquote>
+
+  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>          BAndB <span style="color:#a6e22e">engine</span>(DD<span style="color:#f92672">&lt;</span>MISP,Maximize<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">double</span><span style="color:#f92672">&gt;</span>, <span style="color:#75715e">// to maximize
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       <span style="color:#66d9ef">decltype</span>(myTarget), 
+</span></span><span style="display:flex;"><span>                       <span style="color:#66d9ef">decltype</span>(lgf),
+</span></span><span style="display:flex;"><span>                       <span style="color:#66d9ef">decltype</span>(myStf),
+</span></span><span style="display:flex;"><span>                       <span style="color:#66d9ef">decltype</span>(scf),
+</span></span><span style="display:flex;"><span>                       <span style="color:#66d9ef">decltype</span>(smf),
+</span></span><span style="display:flex;"><span>                       <span style="color:#66d9ef">decltype</span>(eqs),
+</span></span><span style="display:flex;"><span>                       <span style="color:#66d9ef">decltype</span>(local)
+</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">&gt;::</span>makeDD(myInit,myTarget,lgf,myStf,scf,smf,eqs,labels,local),w);
+</span></span><span style="display:flex;"><span>          engine.search(bnds);
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><h2 id="papers">Papers</h2>
+<h3 id="codd">CODD</h3>
+<p><a href="/CODD.pdf">CODD: A Decision Diagram-based Solver for Combinatorial Optimization</a>,
+<a href="https://www.ecai2024.eu/programme/preliminary-schedule">ECAI24</a>, 27TH
+EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE, 19-24 OCTOBER
+2024,Santiago de Compostela. L. Michel &amp; W.J. van Hoeve.</p>
+<h2 id="related-systems">Related Systems</h2>
+<h3 id="ddo">DDO</h3>
+<p><a href="https://github.com/xgillard/ddo">DDO</a> was created by Pierre Schauss and
+Xavier Gillard. It is a generic and efficient framework for MDD-based
+optimization written in Rust.</p>
+<h3 id="domain-independent-dp">Domain Independent DP</h3>
+<p><a href="https://arxiv.org/abs/2401.13883">DIDP</a> is the brainchild of Ryo
+Kuroiwa, J. Christopher Beck. It can be found <a href="https://didp.ai">here</a>
+and offers both a modeling and a solving API for dynamic programming.</p>
+<h3 id="peel--bound">Peel &amp; Bound</h3>
+<ul>
+<li>Peel and Bound: Solving Discrete Optimization Problems with Decision
+Diagrams and Separation Thesis at Polytechnique Montréal, Accepted
+August 16th, 2024. Preprint available, (2024)</li>
+<li>Peel-and-Bound: Generating Stronger Relaxed Bounds with Multivalued
+Decision Diagrams 28th International Conference on Principles and
+Practice of Constraint Programming (CP 2022), Volume 235, pp.
+35:1-35:20, (2022) Isaac Rudich, Quentin Cappart, Louis-Martin
+Rousseau. <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CP.2022.35">Peel &amp;
+Bound</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/cp/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">CP</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">What&#39;s in this project</p>
+      <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-codd">What is <strong>CODD</strong>?</a></li>
+    <li><a href="#dynamic-programming-as-a-computational-model">Dynamic Programming as a Computational Model</a>
+      <ol>
+        <li><a href="#exact-decision-diagrams">Exact Decision Diagrams</a></li>
+        <li><a href="#restricted-decision-diagrams">Restricted Decision Diagrams</a></li>
+        <li><a href="#relaxed-decision-diagrams">Relaxed Decision Diagrams</a></li>
+      </ol>
+    </li>
+    <li><a href="#codd-modeling"><strong>CODD</strong> Modeling</a>
+      <ol>
+        <li><a href="#tsp-example-high-level">TSP Example High Level</a></li>
+        <li><a href="#tsp-example-in-codd">TSP Example in <strong>CODD</strong></a></li>
+      </ol>
+    </li>
+    <li><a href="#codd-solving"><strong>CODD</strong> Solving</a></li>
+    <li><a href="#installing-codd">Installing CODD</a>
+      <ol>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#compilation">Compilation</a></li>
+        <li><a href="#examples">Examples</a></li>
+      </ol>
+    </li>
+    <li><a href="#the-maximum-independent-set-problem-misp">The Maximum Independent Set Problem (MISP)</a>
+      <ol>
+        <li><a href="#preamble">Preamble</a></li>
+        <li><a href="#reading-the-instance">Reading the instance</a></li>
+        <li><a href="#state-definition">State definition</a></li>
+        <li><a href="#main-model">Main Model</a></li>
+      </ol>
+    </li>
+    <li><a href="#papers">Papers</a>
+      <ol>
+        <li><a href="#codd">CODD</a></li>
+      </ol>
+    </li>
+    <li><a href="#related-systems">Related Systems</a>
+      <ol>
+        <li><a href="#ddo">DDO</a></li>
+        <li><a href="#domain-independent-dp">Domain Independent DP</a></li>
+        <li><a href="#peel--bound">Peel &amp; Bound</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+  </div>
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/project/haddock/">Haddock : A Language and Architecture for Decision Diagram Compilation</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/project/crypto/">Cryptanalysis</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/project/ocp/">Objective-CP</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-dark-blue bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://ldmbouge.github.io/" >
+    &copy;  Recent 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

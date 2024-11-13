@@ -1,842 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Home</title>
-    <link>https://ldm.engr.uconn.edu/</link>
-    <description>Recent content in Home on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Recently touched on Recent</title>
+    <link>https://ldmbouge.github.io/</link>
+    <description>Recent content in Recently touched on Recent</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016-2018 Laurent Michel</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ldmbouge.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biography</title>
+      <link>https://ldmbouge.github.io/basic/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/basic/about/</guid>
+      <description>&lt;p&gt;&lt;figure class=&#34;left&#34;&gt;&lt;img src=&#34;https://ldmbouge.github.io/img/portrait.jpg&#34;&#xA;    alt=&#34;Me&#34; width=&#34;150&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Laurent received a B.S. and an Sc.M. in Computer Science from &amp;ldquo;Les&#xA;Facultés Universitaires Notre-Dame de la Paix&amp;rdquo; (&amp;lsquo;93) in Namur,&#xA;Belgium. He later received an Sc.M. (&amp;lsquo;96) and Ph.D. (&amp;lsquo;99) degrees in&#xA;Computer Science from Brown University.&lt;/p&gt;&#xA;&lt;p&gt;After spending one year in industry and 2 years at Brown University as&#xA;Visiting Assistant Professor, he joined the department in 2002 as&#xA;Assistant Professor of Computer Science and Engineering and is now a&#xA;Professor since 2017. He is now the Synchrony Chaired Professor in Cybersecurity.&#xA;His research interests focus on the design and&#xA;implementation of domain specific languages for combinatorial&#xA;optimization, voting security, and system security through optimization.&#xA;He is co-Director of The  Connecticut Advanced Computing Center.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roles</title>
+      <link>https://ldmbouge.github.io/basic/roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/basic/roles/</guid>
+      <description>&lt;h2 id=&#34;center-for-voting-technology-research-voter&#34;&gt;Center for Voting Technology Research (VoTeR)&lt;/h2&gt;&#xA;&lt;p&gt;I serve as a coPI in the &lt;a href=&#34;https://voter.engr.uconn.edu&#34;&gt;VoTeR center&lt;/a&gt; since its inception in 2006. We focus&#xA;on supporting the Secretary of the State&amp;rsquo;s office in CT.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cacc-co-director&#34;&gt;CACC co-Director&lt;/h2&gt;&#xA;&lt;p&gt;I serve as co-Director (along with Prof. J. Chandy) for the&#xA;&lt;a href=&#34;https://cacc.engr.uconn.edu&#34;&gt;CACC&lt;/a&gt; research center.  The Connecticut&#xA;Advanced Computing Center (CACC) leverages the synergies existing in&#xA;CHEST, CSI, Synchrony and VoTeR to investigate, develop, promote, and&#xA;nurture the best hardware and software based security practices for&#xA;indispensable defense and commercial application domains and, in&#xA;particular, for emerging fields such as mobile device security.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Teaching</title>
+      <link>https://ldmbouge.github.io/basic/teaching/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/basic/teaching/</guid>
+      <description>&lt;h2 id=&#34;present&#34;&gt;Present&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Teaching buy out in Fall&#39;24&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;past&#34;&gt;Past&lt;/h2&gt;&#xA;&lt;p&gt;I taught the following classes at UConn&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CSE1729: Introduction to Computing for Majors&lt;/li&gt;&#xA;&lt;li&gt;CSE2100: Introduction to Data-structures and algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/&#34;&gt;CSE3100: System Programming (Fall&#39;15,Fall&#39;17)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=27&#34;&gt;CSE3150: C++ Essentials (Fall&#39;17,Spring&#39;17,Spring&#39;18)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://courses.cse.uconn.edu/moodle/course/view.php?id=74&#34;&gt;CSE3160: Functional Programming Essentials (in Haskell)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=13&#34;&gt;CSE4100: Compilers (Fall&#39;15)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=26&#34;&gt;CSE4102: Programming Languages (Spring&#39;17)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;CSE4300: Operating systems&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://courses.engr.uconn.edu/moodle/course/view.php?id=19&#34;&gt;CSE5095: Discrete Optimization (Spring&#39;16)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;CSE5102: Advanced Programming Language&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I also taught CS4 at Brown University together with Nancy Pollard in the Fall of 2000.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mini-C&#43;&#43;</title>
+      <link>https://ldmbouge.github.io/project/minicpp/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/project/minicpp/</guid>
+      <description>A C++ Implementation of MiniCP</description>
+    </item>
+    <item>
+      <title>CODD: A Decision Diagram-Based Solver for Combinatorial Optimization</title>
+      <link>https://ldmbouge.github.io/talk/codd/</link>
+      <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/talk/codd/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;We introduce CODD, a system for solving combinatorial optimization problems using decision diagram technology. Problems are represented as state-based dynamic programming models using the CODD language specification. The model specification is used to automatically compile relaxed and restricted decision diagrams that are embedded inside a branch-and-bound search process. We introduce abstractions that allow us to generically implement the solver components while maintaining overall execution efficiency. We demonstrate the functionality of CODD on a variety of combinatorial optimization problems and compare its performance to other state-based solvers as well as integer programming and constraint programming solvers. CODD provides competitive results and can outperform the other solvers, sometimes by orders of magnitude.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CP for Bin Packing with Multi-core and GPUs</title>
+      <link>https://ldmbouge.github.io/talk/binpacking/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/talk/binpacking/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;The BinPacking constraint models the requirements of many logistics, resource allocation, and&#xA;production scheduling applications. This paper explores new avenues based on the impressive&#xA;computational power of modern GPUs to propagate the BinPacking constraint. This work showcases&#xA;how the perspective of massive parallelization can lead to novel approaches, such as the use of a&#xA;portfolio of lower bounds, to enhance the pruning of the BinPacking constraints. It delivers insights&#xA;into the design choices and challenges presented by GPU platform for constraint propagation.&#xA;The paper evaluates a GPU-accelerated propagator against both sequential and parallel CPU&#xA;versions, as well as state-of-the-art approaches. Comparisons across various benchmarks from the&#xA;literature show strong performances with respect to both CPU versions and the standard pruning&#xA;approach. When compared to techniques based on Linear Programming, our approach proves&#xA;valuable for large instances or when spending extensive time to obtain the best possible bound is&#xA;not convenient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CODD : Combinatorial Optimization with Decision Diagrams</title>
+      <link>https://ldmbouge.github.io/project/codd/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/project/codd/</guid>
+      <description>CODD : a C++ library implementing the DDOpt framework</description>
+    </item>
+    <item>
+      <title>Haddock : A Language and Architecture for Decision Diagram Compilation</title>
+      <link>https://ldmbouge.github.io/project/haddock/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/project/haddock/</guid>
+      <description>&lt;p&gt;Haddock is &amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Tolerant Algebraic Side-Channel Attack on AES Using CP</title>
-      <link>https://ldm.engr.uconn.edu/talk/example-talk/</link>
+      <link>https://ldmbouge.github.io/talk/aes/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
+      <guid>https://ldmbouge.github.io/talk/aes/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;AES is a mainstream block cipher used in many protocols and whose resilience against attack is essential for cybersecurity. In [14], Oren et al. discuss a Tolerant Algebraic Side-Channel Analysis (TASCA) and show how to use optimization technology to exploit side-channel information and mount a computational attack against AES. This paper revisits the results and posits that Constraint Programming is a strong contender and a potent optimization solution. It extends bit-vector solving as introduced in [8], develops a CP and an IP model and compares them with the original Pseudo-Boolean formulation. The empirical results establish that CP can deliver solutions with orders of magnitude improvement in both run time and memory usage, traits that are essential to potential adoption by cryptographers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Tolerant Algebraic Side-Channel Attack on AES Using CP.</title>
-      <link>https://ldm.engr.uconn.edu/publication/aes/</link>
+      <link>https://ldmbouge.github.io/publication/aes/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/publication/aes/</guid>
-      <description></description>
+      <guid>https://ldmbouge.github.io/publication/aes/</guid>
+      <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;AES is a mainstream block cipher used in many protocols and whose resilience against attack is essential for cybersecurity. In [14], Oren et al. discuss a Tolerant Algebraic Side-Channel Analysis (TASCA) and show how to use optimization technology to exploit side-channel information and mount a computational attack against AES. This paper revisits the results and posits that Constraint Programming is a strong contender and a potent optimization solution. It extends bit-vector solving as introduced in [8], develops a CP and an IP model and compares them with the original Pseudo-Boolean formulation. The empirical results establish that CP can deliver solutions with orders of magnitude improvement in both run time and memory usage, traits that are essential to potential adoption by cryptographers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Search strategies for solving floating point constraint systems.</title>
-      <link>https://ldm.engr.uconn.edu/publication/fpsearch/</link>
+      <link>https://ldmbouge.github.io/publication/fpsearch/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/publication/fpsearch/</guid>
-      <description></description>
+      <guid>https://ldmbouge.github.io/publication/fpsearch/</guid>
+      <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;The ability to verify critical software is a key issue in embedded and&#xA;cyber physical systems typical of automotive, aeronautics or aerospace&#xA;industries. Bounded model checking and constraint programming&#xA;approaches search for counter-examples that exemplify a property&#xA;violation. The search of such counter-examples is a long, tedious and&#xA;costly task especially for programs performing floating point&#xA;computations. Indeed, available search strategies are dedicated to&#xA;finite domains and, to a lesser extent, to continuous domains. In this&#xA;paper, we introduce new strategies dedicated to floating point&#xA;constraints. They take advantage of the properties of floating point&#xA;domains (e.g., domain density) and of floating point constraints&#xA;(e.g., floating point arithmetic) to improve the search for floating&#xA;point constraint problems. First experiments on a set of realistic&#xA;benchmarks show that such dedicated strategies outperform standard&#xA;search and splitting strategies.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Cyberseed</title>
-      <link>https://ldm.engr.uconn.edu/project/cyberseed/</link>
+      <title>CyberSEED</title>
+      <link>https://ldmbouge.github.io/project/cyberseed/</link>
       <pubDate>Fri, 28 Jul 2017 11:27:25 -0400</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/project/cyberseed/</guid>
-      <description>&lt;p&gt;CyberSEED is an annual conference and competition hosted at &lt;a href=&#34;http://www.uconn.edu&#34; target=&#34;_blank&#34;&gt;UConn&lt;/a&gt;
-organized by &lt;a href=&#34;https://www.csi.uconn.edu&#34; target=&#34;_blank&#34;&gt;CSI&lt;/a&gt; and supported by &lt;a href=&#34;www.comcast.com&#34; target=&#34;_blank&#34;&gt;Comcast&lt;/a&gt;.
-You can find out all the details at CyberSEED&amp;rsquo;s home &lt;a href=&#34;http://cyberseed.org&#34; target=&#34;_blank&#34;&gt;cyberseed.org&lt;/a&gt;.
-The 2017 edition is under preparation with new exciting competition and a whole slate of
-speakers!&lt;/p&gt;
-</description>
+      <guid>https://ldmbouge.github.io/project/cyberseed/</guid>
+      <description>An annual Cyber security competitions.</description>
     </item>
-    
-    <item>
-      <title>Writing content with Markdown, LaTeX, and Shortcodes</title>
-      <link>https://ldm.engr.uconn.edu/post/writing-markdown-latex/</link>
-      <pubDate>Mon, 24 Jul 2017 12:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/post/writing-markdown-latex/</guid>
-      <description>&lt;p&gt;Content can be written using &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt;, &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt;, and &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34; target=&#34;_blank&#34;&gt;Hugo Shortcodes&lt;/a&gt;. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.&lt;/p&gt;
-
-&lt;h2 id=&#34;sub-headings&#34;&gt;Sub-headings&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;Italics with *asterisks* or _underscores_.
-
-Bold with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough with ~~two tildes~~.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;ordered-lists&#34;&gt;Ordered lists&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;1. First item
-2. Another item
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;unordered-lists&#34;&gt;Unordered lists&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;* First item
-* Another item
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
-
-&lt;p&gt;Images may be added to a page by placing them in your &lt;code&gt;static/img/&lt;/code&gt; folder and referencing them using one of the following two notations:&lt;/p&gt;
-
-&lt;p&gt;A general image:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;![alternative text for search engines](/img/screenshot.png)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A numbered figure with caption:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; figure src=&amp;quot;/img/screenshot.png&amp;quot; title=&amp;quot;Figure Caption&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;[I&#39;m a link](https://www.google.com)
-[A post]({{&amp;lt; ref &amp;quot;post/hi.md&amp;quot; &amp;gt;}})
-[A publication]({{&amp;lt; ref &amp;quot;publication/hi.md&amp;quot; &amp;gt;}})
-[A project]({{&amp;lt; ref &amp;quot;project/hi.md&amp;quot; &amp;gt;}})
-[Another section]({{&amp;lt; relref &amp;quot;hi.md#who&amp;quot; &amp;gt;}})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;emojis&#34;&gt;Emojis&lt;/h2&gt;
-
-&lt;p&gt;See the &lt;a href=&#34;http://www.webpagefx.com/tools/emoji-cheat-sheet/&#34; target=&#34;_blank&#34;&gt;Emoji cheat sheet&lt;/a&gt; for available emoticons. The following serves as an example, but you should remove the spaces between each emoji name and pair of semicolons:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I : heart : Academic : smile :
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I ❤️ Academic 😄&lt;/p&gt;
-
-&lt;h2 id=&#34;blockquote&#34;&gt;Blockquote&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;I have more [^1] to say.
-
-[^1]: Footnote example.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I have more &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; to say.&lt;/p&gt;
-
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code highlighting&lt;/h2&gt;
-
-&lt;p&gt;Pass the &lt;em&gt;language&lt;/em&gt; of the code, such as &lt;code&gt;python&lt;/code&gt;, as a parameter
-after three backticks:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;```python
-# Example of code highlighting
-input_string_var = input(&amp;quot;Enter some data: &amp;quot;)
-print(&amp;quot;You entered: {}&amp;quot;.format(input_string_var))
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Result:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Example of code highlighting
-input_string_var = input(&amp;quot;Enter some data: &amp;quot;)
-print(&amp;quot;You entered: {}&amp;quot;.format(input_string_var))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;highlighting-options&#34;&gt;Highlighting options&lt;/h3&gt;
-
-&lt;p&gt;The Academic theme uses &lt;a href=&#34;https://highlightjs.org&#34; target=&#34;_blank&#34;&gt;highlight.js&lt;/a&gt; for
-source code highlighting, and highlighting is enabled by default for
-all pages. However, several configuration options are supported that
-allow finer-grained control over highlight.js.&lt;/p&gt;
-
-&lt;p&gt;The following table lists the supported options for configuring
-highlight.js, along with their expected type and a short
-description. A &amp;ldquo;yes&amp;rdquo; in the &lt;strong&gt;config.toml&lt;/strong&gt; column means the value can
-be set globally in &lt;code&gt;config.toml&lt;/code&gt;, and a &amp;ldquo;yes&amp;rdquo; in the &lt;strong&gt;preamble&lt;/strong&gt;
-column means that the value can be set locally in a particular page&amp;rsquo;s
-preamble.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;option&lt;/th&gt;
-&lt;th&gt;type&lt;/th&gt;
-&lt;th&gt;description&lt;/th&gt;
-&lt;th&gt;config.toml&lt;/th&gt;
-&lt;th&gt;preamble&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;highlight&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;boolean&lt;/td&gt;
-&lt;td&gt;enable/disable highlighting&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;highlight_languages&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;slice&lt;/td&gt;
-&lt;td&gt;choose additional languages&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;highlight_style&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;choose a highlighting style&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;highlight_version&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;choose the highlight.js version&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h4 id=&#34;option-highlight&#34;&gt;Option &lt;code&gt;highlight&lt;/code&gt;&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;highlight&lt;/code&gt; option allows enabling or disabling the inclusion of
-highlight.js, either globally or for a particular page. If the option
-is unset, it has the same effect as if you had specified &lt;code&gt;highlight =
-true&lt;/code&gt;. That is, the highlight.js javascript and css files will be
-included in every page. If you&amp;rsquo;d like to only include highlight.js
-files on pages that actually require source code highlighting, you can
-set &lt;code&gt;highlight = false&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;, and then override it by
-setting &lt;code&gt;highlight = true&lt;/code&gt; in the preamble of any pages that require
-source code highlighting. Conversely, you could enable highlighting
-globally, and disable it locally for pages that do not require
-it. Here is a table that shows whether highlighting will be enabled
-for a page, based on the values of &lt;code&gt;highlight&lt;/code&gt; set in &lt;code&gt;config.toml&lt;/code&gt;
-and/or the page&amp;rsquo;s preamble.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;config.toml&lt;/th&gt;
-&lt;th&gt;page preamble&lt;/th&gt;
-&lt;th&gt;highlighting enabled for page?&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;unset or true&lt;/td&gt;
-&lt;td&gt;unset or true&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;unset or true&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;td&gt;unset or false&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;td&gt;true&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h4 id=&#34;option-highlight-languages&#34;&gt;Option &lt;code&gt;highlight_languages&lt;/code&gt;&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;highlight_languages&lt;/code&gt; option allows you to specify additional
-languages that are supported by highlight.js, but are not considered
-&amp;ldquo;common&amp;rdquo; and therefore are not supported by default. For example, if
-you want source code highlighting for Go and clojure in all pages, set
-&lt;code&gt;highlight_languages = [&amp;quot;go&amp;quot;, &amp;quot;clojure&amp;quot;]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;. If, on the
-other hand, you want to enable a language only for a specific page,
-you can set &lt;code&gt;highlight_languages&lt;/code&gt; in that page&amp;rsquo;s preamble.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;highlight_languages&lt;/code&gt; options specified in &lt;code&gt;config.toml&lt;/code&gt; and in a
-page&amp;rsquo;s preamble are additive. That is, if &lt;code&gt;config.toml&lt;/code&gt; contains,
-&lt;code&gt;highlight_languages = [&amp;quot;go&amp;quot;]&lt;/code&gt; and the page&amp;rsquo;s preamble contains
-&lt;code&gt;highlight_languages = [&amp;quot;ocaml&amp;quot;]&lt;/code&gt;, then javascript files for &lt;em&gt;both&lt;/em&gt; go
-and ocaml will be included for that page.&lt;/p&gt;
-
-&lt;p&gt;If the &lt;code&gt;highlight_languages&lt;/code&gt; option is set, then the corresponding
-javascript files will be served from the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34;&gt;cdnjs
-server&lt;/a&gt;. To see a list of
-available languages, visit the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34;&gt;cdnjs
-page&lt;/a&gt; and search for links
-with the word &amp;ldquo;languages&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;highlight_languages&lt;/code&gt; option provides an easy and convenient way
-to include support for additional languages to be severed from a
-CDN. If serving unmodified files from cdnjs doesn&amp;rsquo;t meet your needs,
-you can include javascript files for additional language support via
-one of the methods described in the &lt;a href=&#34;https://ldm.engr.uconn.edu/post/getting-started/#third-party-and-local-scripts-js&#34; target=&#34;_blank&#34;&gt;getting started guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;option-highlight-style&#34;&gt;Option &lt;code&gt;highlight_style&lt;/code&gt;&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;highlight_style&lt;/code&gt; option allows you to select an alternate css
-style for highlighted code. For example, if you wanted to use the
-solarized-dark style, you could set &lt;code&gt;highlight_style =
-&amp;quot;solarized-dark&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;If the &lt;code&gt;highlight_style&lt;/code&gt; option is unset, the default is to use the
-file &lt;code&gt;/css/highlight.min.css&lt;/code&gt;, either the one provided by the Academic
-theme, or else the one in your local &lt;code&gt;static&lt;/code&gt; directory.  The
-&lt;code&gt;/css/highlight.min.css&lt;/code&gt; file provided by Academic is equivalent to
-the &lt;code&gt;github&lt;/code&gt; style from highlight.js.&lt;/p&gt;
-
-&lt;p&gt;If the &lt;code&gt;highlight_style&lt;/code&gt; option &lt;em&gt;is&lt;/em&gt; set, then
-&lt;code&gt;/css/highlight.min.css&lt;/code&gt; is ignored, and the corresponding css file
-will be served from the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34;&gt;cdnjs
-server&lt;/a&gt;. To see a list of
-available styles, visit the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34;&gt;cdnjs
-page&lt;/a&gt; and search for links
-with the word &amp;ldquo;styles&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;See the &lt;a href=&#34;https://highlightjs.org/static/demo/&#34; target=&#34;_blank&#34;&gt;highlight.js demo page&lt;/a&gt;
-for examples of available styles.&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Not all styles listed on the &lt;a href=&#34;https://highlightjs.org/static/demo/&#34; target=&#34;_blank&#34;&gt;highlight.js demo
-page&lt;/a&gt; are available from the
-&lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34;&gt;cdnjs server&lt;/a&gt;. If you want
-to use a style that is not served by cdnjs, just leave
-&lt;code&gt;highlight_style&lt;/code&gt; unset, and place the corresponding css file in
-&lt;code&gt;/static/css/highlight.min.css&lt;/code&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;If you don&amp;rsquo;t want to change the default style that ships with Academic
-but you do want the style file served from the &lt;a href=&#34;https://cdnjs.com/libraries/highlight.js/&#34; target=&#34;_blank&#34;&gt;cdnjs
-server&lt;/a&gt;, set
-&lt;code&gt;highlight_style = &amp;quot;github&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;p&gt;The &lt;code&gt;highlight_style&lt;/code&gt; option is only recognized when set in
-&lt;code&gt;config.toml&lt;/code&gt;. Setting &lt;code&gt;highlight_style&lt;/code&gt; in your page&amp;rsquo;s preamble has
-no effect.&lt;/p&gt;
-
-&lt;h4 id=&#34;option-highlight-version&#34;&gt;Option &lt;code&gt;highlight_version&lt;/code&gt;&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;highlight_version&lt;/code&gt; option, as the name implies, allows you to
-select the version of highlight.js you want to use. The default value
-is &amp;ldquo;9.9.0&amp;rdquo;. The &lt;code&gt;highlight_version&lt;/code&gt; option is only recognized when set
-in &lt;code&gt;config.toml&lt;/code&gt;. Setting &lt;code&gt;highlight_version&lt;/code&gt; in your page&amp;rsquo;s preamble
-has no effect.&lt;/p&gt;
-
-&lt;h2 id=&#34;twitter-tweet&#34;&gt;Twitter tweet&lt;/h2&gt;
-
-&lt;p&gt;To include a single tweet, pass the tweet’s ID from the tweet&amp;rsquo;s URL as
-parameter to the shortcode:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; tweet 666616452582129664 &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;youtube&#34;&gt;Youtube&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;vimeo&#34;&gt;Vimeo&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; vimeo 146022717 &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;github-gist&#34;&gt;GitHub gist&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; gist USERNAME GIST-ID  &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;speaker-deck&#34;&gt;Speaker Deck&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; speakerdeck 4e8126e72d853c0060001f97 &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;rm-latex-math&#34;&gt;$\rm \LaTeX$ math&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-TeX&#34;&gt;$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V
-\right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$&lt;/p&gt;
-
-&lt;p&gt;Alternatively, inline math can be written by wrapping the formula with
-only a single &lt;code&gt;$&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta +
-\boldsymbol\varepsilon$&lt;/p&gt;
-
-&lt;h2 id=&#34;table&#34;&gt;Table&lt;/h2&gt;
-
-&lt;p&gt;Code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;| Command           | Description                    |
-| ------------------| ------------------------------ |
-| `hugo`            | Build your website.            |
-| `hugo serve -w`   | View your website.             |
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Result:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Command&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Build your website.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;hugo serve -w&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;View your website.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;alerts&#34;&gt;Alerts&lt;/h2&gt;
-
-&lt;p&gt;Alerts are a useful feature that add side content such as tips, notes,
-or warnings to your articles. They are especially handy when writing
-educational tutorial-style articles. Use the corresponding shortcodes
-to enable alerts inside your content:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{% alert note %}}
-Here&#39;s a tip or note...
-{{% /alert %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will display the following &lt;em&gt;note&lt;/em&gt; block:&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Here&amp;rsquo;s a tip or note&amp;hellip;&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;pre&gt;&lt;code&gt;{{% alert warning %}}
-Here&#39;s some important information...
-{{% /alert %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will display the following &lt;em&gt;warning&lt;/em&gt; block:&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;p&gt;Here&amp;rsquo;s some important information&amp;hellip;&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Footnote example.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo and the Academic Theme</title>
-      <link>https://ldm.engr.uconn.edu/post/getting-started/</link>
-      <pubDate>Mon, 24 Jul 2017 09:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;I converted my site from RapidWeaver to Hugo and adopted the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Academic theme&lt;/a&gt;.
-With a few tweaks, it delivered a nice site that is quite easy to maintain, including a list of publications with
-bibtex as a backend for the format.&lt;/p&gt;
-
-&lt;h3 id=&#34;getting-bibtex-as-a-source&#34;&gt;Getting bibtex as a source&lt;/h3&gt;
-
-&lt;p&gt;This is not as difficult as it may seem. The trick was to avoid server-side PHP and adopt, instead, a javascript
-implementation that renders the .bib file. This ca be found in the form of &lt;a href=&#34;https://github.com/pcooksey/bibtex-js&#34; target=&#34;_blank&#34;&gt;bibtex-js.js&lt;/a&gt;
-a nice library hosted on github.&lt;/p&gt;
-
-&lt;p&gt;Naturally, Hugo needs you to use its templating mechanism, and partials in particular to blend the necessary HTML
-into a markdown page. That is not too hard. The first step is to create a normal page (e.g., &lt;code&gt;allpubs.md&lt;/code&gt;) with Hugo and insert a
-custom_css and custom_js attributes into the meta-data of the page as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;   +++
-   title = &amp;quot;All Publications&amp;quot;
-   date  =  2017-07-23T14:10:07-04:00
-   draft = false
-   tags  = [&amp;quot;pubs&amp;quot;]
-   # Does the project detail page use math formatting?
-   math = false
-
-   custom_css = [&amp;quot;css/pubjs.css&amp;quot;]
-   custom_js  = [&amp;quot;js/bibtex_js.js&amp;quot;]
-
-   [header]
-   image = &amp;quot;headers/publish.jpg&amp;quot;
-   caption = &amp;quot;It needs a real caption 😄&amp;quot;
-
-   +++
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once that is done, deploy the CSS and the js into the static tree as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; static
- ├── css
- │   └── pubjs.css
- └── js
-     └── bibtex_js.js
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;using-partials&#34;&gt;Using Partials&lt;/h3&gt;
-
-&lt;p&gt;The full content of the layout is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; layouts/
- ├── partials
- │   ├── head_custom.html
- │   ├── publist.html
- └── shortcodes
-     └── importPartial.html
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Each file is reviewed next.&lt;/p&gt;
-
-&lt;p&gt;The body of the &lt;code&gt;allpubs.md&lt;/code&gt; is quite simple, it uses a partial to bring in the custom HTML and headers that invoke the
-javascript to build the full document. Here is what it looks like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;{{ &amp;lt; importPartial &amp;quot;publist.html&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Yes, it is a one liner.
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Note that there is no space between the two opening curly braces and the angle bracket. I was forced to add one to prevent it being
-expand by Hugo :smile:&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The shortcode &lt;code&gt;importPartial.html&lt;/code&gt; itself is simple:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;{{ partial (.Get 0) .Page }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;publist.html&lt;/code&gt; file  is a partial that you must create in the &lt;code&gt;layout/partials&lt;/code&gt; folder. It is a bit longer though but
-is completely generic.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;head_custom.html&lt;/code&gt; looks up the attribute defined in the page (e.g., custom_css) and pulls the necessary css and javascript.
-It is a tiny template:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;   {{ range $.Param &amp;#34;custom_css&amp;#34; }}
-       &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ $.Site.BaseURL }}{{ . }}&amp;#34;&lt;/span&gt;&amp;gt;
-   {{ end }}
-
-   {{ range $.Param &amp;#34;custom_js&amp;#34; }}
-       &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ $.Site.BaseURL }}{{ . }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
-       &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
-   {{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;With this, you create a decent looking page with all the publications without having to manually convert the .bib into
-Hugo. It all gets done automatically.&lt;/p&gt;
-
-&lt;h3 id=&#34;files-to-grab&#34;&gt;Files to grab&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CSS: &lt;a href=&#34;https://ldm.engr.uconn.edu/css/pubjs.css&#34;&gt;pubjs.css&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;JS: &lt;a href=&#34;https://ldm.engr.uconn.edu/js/bibtex_js.js&#34;&gt;bibtex_js.js&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;HTML Partial: &lt;a href=&#34;https://ldm.engr.uconn.edu/layouts/partials/publist.html&#34;&gt;publist.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Publications with yaml</title>
-      <link>https://ldm.engr.uconn.edu/pubs/mypubs/</link>
-      <pubDate>Mon, 24 Jul 2017 09:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/pubs/mypubs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>All Publications</title>
-      <link>https://ldm.engr.uconn.edu/allpubs/</link>
-      <pubDate>Sun, 23 Jul 2017 14:10:07 -0400</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/allpubs/</guid>
-      <description>
-
-&lt;bibtex src=&#34;https://ldm.engr.uconn.edu/~ldm/work/ldm.bib&#34;&gt;&lt;/bibtex&gt;
-
-    &lt;a name=&#34;top&#34;&gt;&lt;/a&gt;
-    &lt;h1 class=&#34;header&#34;&gt;Publications&lt;/h1&gt;
-
-    &lt;div class=&#34;bibtex_structure&#34;&gt;
-      &lt;div class=&#34;group bibtextype&#34; extra=&#34;ASC string&#34;&gt;
-	&lt;a href=&#34;#top&#34; style=&#34;display: inline&#34;&gt;&lt;em&gt;(Top of the page)&lt;/em&gt;&lt;/a&gt;
-	&lt;div style=&#34;padding-bottom:10px;&#34;&gt;&lt;/div&gt;
-	&lt;div class=&#34;sort year&#34; extra=&#34;DESC string&#34;&gt;
-	  &lt;div class=&#34;templates&#34;&gt;&lt;/div&gt;
-	&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;div id=&#34;bibtex_display&#34;&gt;
-  
-      &lt;div class=&#34;bibtex_template&#34; style=&#34;display: none;&#34;&gt;
-	&lt;ul&gt; &lt;li&gt;
-	    
-	    &lt;span class=&#34;if title&#34;&gt;
-              &lt;span class=&#34;if year&#34;&gt;[&lt;span class=&#34;year&#34;&gt;&lt;/span&gt;]&lt;/span&gt;
-              &lt;a class=&#34;bibtexVar&#34; href=&#34;http://www.website.com/~demo/papers/+BIBTEXKEY+.pdf&#34; extra=&#34;BIBTEXKEY&#34;&gt;
-		&lt;span style=&#34;font-weight: bold;&#34; class=&#34;title&#34;&gt;&lt;/span&gt;,
-              &lt;/a&gt;
-	    &lt;/span&gt;
-	    &lt;div&gt;
-	      &lt;span class=&#34;if author&#34;&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;,&lt;/span&gt;
-              &lt;span class=&#34;if journal&#34;&gt;&lt;em&gt;&lt;span class=&#34;journal&#34;&gt;&lt;/span&gt;&lt;/em&gt;,&lt;/span&gt;
-              &lt;span class=&#34;if publisher&#34;&gt;&lt;em&gt;&lt;span class=&#34;publisher&#34;&gt;&lt;/span&gt;&lt;/em&gt;,&lt;/span&gt;
-              &lt;span class=&#34;if booktitle&#34;&gt;In &lt;em&gt;&lt;span class=&#34;booktitle&#34;&gt;&lt;/span&gt;&lt;/em&gt;,&lt;/span&gt;
-              &lt;span class=&#34;if address&#34;&gt;&lt;span class=&#34;address&#34;&gt;&lt;/span&gt;,&lt;/span&gt;
-              &lt;span class=&#34;if month&#34;&gt;&lt;span class=&#34;month&#34;&gt;&lt;/span&gt;,&lt;/span&gt;
-              &lt;span class=&#34;if year&#34;&gt;&lt;span class=&#34;year&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
-              &lt;span class=&#34;if note&#34;&gt;&lt;span class=&#34;note&#34;&gt;&lt;/span&gt;&lt;/span&gt;
-              &lt;a class=&#34;bibtexVar&#34; role=&#34;button&#34;
-		 data-toggle=&#34;collapse&#34;
-		 href=&#34;#bib+BIBTEXKEY+&#34;
-		 aria-expanded=&#34;false&#34;
-		 aria-controls=&#34;bib+BIBTEXKEY+&#34;
-		 extra=&#34;BIBTEXKEY&#34;&gt;
-		[bib]
-	      &lt;/a&gt;
-	    &lt;/div&gt;
-	    &lt;div class=&#34;bibtexVar collapse&#34; id=&#34;bib+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34;&gt;
-	      &lt;div class=&#34;well&#34;&gt;&lt;pre&gt;&lt;span class=&#34;bibtexraw noread&#34;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-	    &lt;/div&gt;
-	    &lt;div style=&#34;display:none&#34;&gt;&lt;span class=&#34;bibtextype&#34;&gt;&lt;/span&gt;&lt;/div&gt;
-	&lt;/li&gt;&lt;/ul&gt;
-      &lt;/div&gt;  
-    &lt;/div&gt;
-
-
-
-</description>
-    </item>
-    
     <item>
       <title>Cryptanalysis</title>
-      <link>https://ldm.engr.uconn.edu/project/crypto/</link>
+      <link>https://ldmbouge.github.io/project/crypto/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/project/crypto/</guid>
-      <description>&lt;p&gt;This project focuses on using Discrete Optimization for cryptanalysis purposes. In particular, we are looking
-at using side-channel information to break AES. This problem was approached before with Integer Programming.
-CP can prove extremely versatile when equipped with suitable domains such as bit-vectors.&lt;/p&gt;
-</description>
+      <guid>https://ldmbouge.github.io/project/crypto/</guid>
+      <description>Breaking Encryption with Optimization (and side-channel)</description>
     </item>
-    
     <item>
       <title>Objective-CP</title>
-      <link>https://ldm.engr.uconn.edu/project/ocp/</link>
+      <link>https://ldmbouge.github.io/project/ocp/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/project/ocp/</guid>
-      <description>
-
-&lt;p&gt;The Objective-CP platform consist of a collection of libraries useful
-for solving combinatorial optimization problems. In particular, it
-offers a technology independent modeling library where models are
-first class objects. It also provides interfaces to concrete solvers
-such as MIP or CP. Its CP solver is brand new and based on a
-microkernel architecture.&lt;/p&gt;
-
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-
-&lt;p&gt;The platform is implemented in Objective-C, an object-oriented
-descendant of Smalltalk that builds upon a pure  C language core. Its
-object-oriented capabilities are all offered through a runtime library
-and the language is therefore 100% compatible with pure C.&lt;/p&gt;
-
-&lt;p&gt;In addition, Apple recently (June 2015) announced that its new
-flagship language (Swift) was going to be open-sourced in
-Fall&amp;rsquo;15. Swift is completely backward compatible with Objective-C, yet
-it offers a modern syntax with many amenities that programmers
-love. In particular, it supports operator overloading which allows us
-to write truly elegant models that rivals with Algebraic Modeling
-Language in term of their elegance.&lt;/p&gt;
-
-&lt;h3 id=&#34;microkernel&#34;&gt;Microkernel&lt;/h3&gt;
-
-&lt;p&gt;The Objective-CP solver is based on a microkernel architecture. This
-page provides links to the benchmarks that were used to evaluate the
-performance of the solver. In particular, it provides COMET, Choco
-3.3.1 and Objective-CP source source for the &lt;em&gt;models, including the
-search procedures&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Mozilla Public License&lt;/p&gt;
-
-&lt;p&gt;Copyright &amp;copy; 2015 NICTA, Laurent Michel and Pascal Van Hentenryck&lt;/p&gt;
-
-&lt;p&gt;This Source Code Form is subject to the terms of the Mozilla
-Public License, v. 2.0. If a copy of the MPL was not distributed with
-this file, You can obtain one at &lt;a href=&#34;http://mozilla.org/MPL/2.0/&#34; target=&#34;_blank&#34;&gt;http://mozilla.org/MPL/2.0/&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;examples-in-swift&#34;&gt;Examples in Swift&lt;/h2&gt;
-
-&lt;h3 id=&#34;a-model-for-the-8-queens&#34;&gt;A model for the 8-queens&lt;/h3&gt;
-
-&lt;p&gt;This is a simple example showing the library accessed from Swift.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;import ORProgram
- 
-autoreleasepool {
-   let n : ORInt = 8
-   let model = ORFactory.createModel()
-   let R     = ORFactory.intRange(model, low: 0, up: n - 1)
-   let x     = ORFactory.intVarArray(model, range: R, domain: R)
-   for  i : ORInt in 0..&amp;lt;n  {
-      for j : ORInt in i+1..&amp;lt;n {
-         model.add(x[i] != x[j])
-         model.add(x[i] != x[j] + (i-j))
-         model.add(x[i] != x[j] + (j-i))
-      }
-   }
-   let cp = ORFactory.createCPProgram(model)
-   cp.search {
-      firstFail(cp, x)
-   }
-   println(&amp;quot;Number of solutions: \(cp.solutionPool().count())&amp;quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;magic-series&#34;&gt;Magic series&lt;/h3&gt;
-
-&lt;p&gt;This second example illustrate more complex algebraic equations and
-aggregates in particular. It still follows the classic model with
-redundant constraints&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-swift&#34;&gt;import ORProgram
- 
-autoreleasepool {
-   println(&amp;quot;magicSerie in swift!&amp;quot;)
-   let n : ORInt = 14
-   let m = ORFactory.createModel()
-   let R = range(m,0...n-1)
-   let x = ORFactory.intVarArray(m, range: R, domain: R)
-   for i in 0..&amp;lt;n {
-      m.add(sum(m, R) {k in x[k] == i} == x[i])
-   }
-   m.add(sum(m,R) {i in x[i] * i    } == n)
-   m.add(sum(m,R) {i in x[i] * (i-1)} == 0)
-    
-   let cp = ORFactory.createCPProgram(m)
-   cp.search { firstFail(cp, x) }
-   println(&amp;quot;Number of solutions: \(cp.solutionPool().count())&amp;quot;)
-   if let sol = cp.solutionPool().best() {
-      let z = [ORInt](0..&amp;lt;n).map { k in sol.intValue(x[k])}
-      println(&amp;quot;Solution is: &amp;quot; + z.description)
-   }
-   ORFactory.shutdown()
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;example-in-objective-c&#34;&gt;Example in Objective-C&lt;/h2&gt;
-
-&lt;p&gt;For completeness sake, here is the same n-queens in native Objective-C&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Objc&#34;&gt;#import &amp;lt;ORProgram/ORProgram.h&amp;gt;
-#import &amp;quot;ORCmdLineArgs.h&amp;quot;
- 
-int main (int argc, const char * argv[])
-{
-   @autoreleasepool {
-      ORCmdLineArgs* args = [ORCmdLineArgs newWith:argc argv:argv];
-      [args measure:^struct ORResult(){
-         int n = [args size];
-         id&amp;lt;ORModel&amp;gt; model = [ORFactory createModel];
-         id&amp;lt;ORIntRange&amp;gt; R = RANGE(model,0,n-1);
-         id&amp;lt;ORMutableInteger&amp;gt; nbSol = INTEGER(model,0);
-         id&amp;lt;ORIntVarArray&amp;gt; x = [ORFactory intVarArray:model range:R domain: R];
-         for(ORUInt i =0;i &amp;lt; n; i++) {
-            for(ORUInt j=i+1;j&amp;lt; n;j++) {
-               [model add: [x[i] neq: x[j]]];
-               [model add: [x[i] neq: [x[j] plus: @(i-j)]]];
-               [model add: [x[i] neq: [x[j] plus: @(j-i)]]];
-            }
-         }
-         id&amp;lt;CPProgram&amp;gt; cp = [ORFactory createCPProgram: model];
-         [cp clearOnSolution]; // If one does not wish to save solutions
-         [cp solveAll: ^{
-            [cp labelArrayFF: x];
-            [nbSol incr:cp];
-         }];
-         printf(&amp;quot;GOT %d solutions\n&amp;quot;,[nbSol intValue:cp]);
-         NSLog(@&amp;quot;Solver status: %@\n&amp;quot;,cp);
-         struct ORResult r = REPORT([nbSol intValue:cp], 
-                                    [cp.explorer nbFailures], 
-                                    [cp.explorer nbChoices], 
-                                    [cp.engine nbPropagation]);
-         [ORFactory shutdown];
-         return r;
-      }];      
-   }
-   return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://ldmbouge.github.io/project/ocp/</guid>
+      <description>An Hybrid Optimization Platform</description>
     </item>
-    
     <item>
-      <title>Securing Cloud Apps</title>
-      <link>https://ldm.engr.uconn.edu/project/secvm/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://ldm.engr.uconn.edu/project/secvm/</guid>
+      <title></title>
+      <link>https://ldmbouge.github.io/pandoc-bib-test-output/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/pandoc-bib-test-output/</guid>
+      <description>\[1\]&lt;p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Anagnostopoulos, A., Michel, L.,&#xA;Hentenryck, P.V. and Vergados, Y. 2003. A simulated annealing approach&#xA;to the traveling tournament problem. &lt;em&gt;Proceedings CPAIOR’03&lt;/em&gt;&#xA;(2003).&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;\[2\]&lt;p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Anagnostopoulos, A., Michel, L.,&#xA;Hentenryck, P.V. and Vergados, Y. 2006. A simulated annealing approach&#xA;to the traveling tournament problem. &lt;em&gt;J. of Scheduling&lt;/em&gt;. 9, (2006),&#xA;177–193.&#xA;DOI:https://doi.org/&lt;a href=&#34;https://doi.org/10.1007/s10951-006-7187-8&#34;&gt;10.1007/s10951-006-7187-8&lt;/a&gt;.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://ldmbouge.github.io/pandoc-bib-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/pandoc-bib-test/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Full Publications List</title>
+      <link>https://ldmbouge.github.io/publication/full/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ldmbouge.github.io/publication/full/</guid>
+      <description>Complete list of publications.</description>
+    </item>
   </channel>
 </rss>
