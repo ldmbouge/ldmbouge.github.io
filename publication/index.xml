@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Recent</title>
-    <link>http://localhost:1313/publication/</link>
+    <link>https://ldmbouge.github.io/publication/</link>
     <description>Recent content in Publications on Recent</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Aug 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ldmbouge.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Tolerant Algebraic Side-Channel Attack on AES Using CP.</title>
-      <link>http://localhost:1313/publication/aes/</link>
+      <link>https://ldmbouge.github.io/publication/aes/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/aes/</guid>
+      <guid>https://ldmbouge.github.io/publication/aes/</guid>
       <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;AES is a mainstream block cipher used in many protocols and whose resilience against attack is essential for cybersecurity. In [14], Oren et al. discuss a Tolerant Algebraic Side-Channel Analysis (TASCA) and show how to use optimization technology to exploit side-channel information and mount a computational attack against AES. This paper revisits the results and posits that Constraint Programming is a strong contender and a potent optimization solution. It extends bit-vector solving as introduced in [8], develops a CP and an IP model and compares them with the original Pseudo-Boolean formulation. The empirical results establish that CP can deliver solutions with orders of magnitude improvement in both run time and memory usage, traits that are essential to potential adoption by cryptographers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Search strategies for solving floating point constraint systems.</title>
-      <link>http://localhost:1313/publication/fpsearch/</link>
+      <link>https://ldmbouge.github.io/publication/fpsearch/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/fpsearch/</guid>
+      <guid>https://ldmbouge.github.io/publication/fpsearch/</guid>
       <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;The ability to verify critical software is a key issue in embedded and&#xA;cyber physical systems typical of automotive, aeronautics or aerospace&#xA;industries. Bounded model checking and constraint programming&#xA;approaches search for counter-examples that exemplify a property&#xA;violation. The search of such counter-examples is a long, tedious and&#xA;costly task especially for programs performing floating point&#xA;computations. Indeed, available search strategies are dedicated to&#xA;finite domains and, to a lesser extent, to continuous domains. In this&#xA;paper, we introduce new strategies dedicated to floating point&#xA;constraints. They take advantage of the properties of floating point&#xA;domains (e.g., domain density) and of floating point constraints&#xA;(e.g., floating point arithmetic) to improve the search for floating&#xA;point constraint problems. First experiments on a set of realistic&#xA;benchmarks show that such dedicated strategies outperform standard&#xA;search and splitting strategies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Full Publications List</title>
-      <link>http://localhost:1313/publication/full/</link>
+      <link>https://ldmbouge.github.io/publication/full/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/full/</guid>
+      <guid>https://ldmbouge.github.io/publication/full/</guid>
       <description>Complete list of publications.</description>
     </item>
   </channel>

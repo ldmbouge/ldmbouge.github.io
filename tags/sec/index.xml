@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sec on Recent</title>
-    <link>http://localhost:1313/tags/sec/</link>
+    <link>https://ldmbouge.github.io/tags/sec/</link>
     <description>Recent content in Sec on Recent</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Jul 2017 11:27:25 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ldmbouge.github.io/tags/sec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberSEED</title>
-      <link>http://localhost:1313/project/cyberseed/</link>
+      <link>https://ldmbouge.github.io/project/cyberseed/</link>
       <pubDate>Fri, 28 Jul 2017 11:27:25 -0400</pubDate>
-      <guid>http://localhost:1313/project/cyberseed/</guid>
+      <guid>https://ldmbouge.github.io/project/cyberseed/</guid>
       <description>An annual Cyber security competitions.</description>
     </item>
     <item>
       <title>Cryptanalysis</title>
-      <link>http://localhost:1313/project/crypto/</link>
+      <link>https://ldmbouge.github.io/project/crypto/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/crypto/</guid>
+      <guid>https://ldmbouge.github.io/project/crypto/</guid>
       <description>Breaking Encryption with Optimization (and side-channel)</description>
     </item>
   </channel>
